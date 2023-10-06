@@ -1,5 +1,5 @@
 # Group TEAM_NUMBER
-Group Name: Group 9
+Group Name: Pixel Pioneers
 
 [MVP Link](https://docs.google.com/document/d/1xPoQdBbHuV-QSsPsJCC-X_cTfnT0Trt04fLsvaaAst4/edit?usp=sharing)
 
