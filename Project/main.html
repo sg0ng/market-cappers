@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>我的第一个页面</h1>
+    <p>我的第一个段落。</p>
+
+    <script>
+        let input = prompt();//input of cap
+        function randomGenerate(ans) {
+            let num = [];
+            let temp = ans - ans * 0.3;   //design what are some possible answer range, right here I use 30% higher or lower
+            let weights = [1, 2, 2, 2.5, 3, 3, 2.5, 2, 2, 1];   //use this array to modify weight
+            let totalWeight = 0;
+            let index = -1;
+            for (let i = 0; i < weights.length; i++) {
+                totalWeight += weights[i];
+            }
+            let random = Math.random() * totalWeight;
+            for (let i = 0; i < weights.length; i++) {
+                if (random < weights[i]) {
+                    index = i;
+                    break;
+                }
+                random -= weights[i];
+            }
+            for (let i = 0; i < 10; i++) {    //this for loop is use to connect weight and range
+                num[i] = temp;
+                temp += ans * 0.06;
+            }
+            let result = Math.random() * ans * 0.06 + num[index];
+            return result;
+        }
+        console.log(randomGenerate(input));
+    </script>
+
+</body>
+
+</html>
