@@ -2,12 +2,21 @@
 <html>
 
 <body>
-
-    <h1>我的第一个页面</h1>
-    <p>我的第一个段落。</p>
+    <header>
+        This is the header.
+    </header>
+    <main>
+        <form action="C:\Users\14161\OneDrive\桌面\UIUC\CS124H\Group9-FA23\Project">
+            <input type="file" id="data" onchange="openFile(event)">
+            <input type="button" onclick="window.open('C:/Users/14161/OneDrive/桌面/UIUC/CS124H/Group9-FA23/Project/test.html')" value="larger">
+            <input type="button" onclick="window.open('C:/Users/14161/OneDrive/桌面/UIUC/CS124H/Group9-FA23/Project/test.html')" value="smaller">
+        </form>
+    </main>
 
     <script>
-        let input = prompt();//input of cap
+        var openFile = function (event){
+            console.log("start");
+        }
         function randomGenerate(ans) {
             let num = [];
             let temp = ans - ans * 0.3;   //design what are some possible answer range, right here I use 30% higher or lower
