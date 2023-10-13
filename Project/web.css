@@ -1,0 +1,95 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #607c8e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#game {
+    text-align: center;
+}
+
+#question {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#options {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #6296b8be;
+    color: #ebe5e5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#marketCap {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#score {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#lose-screen {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #5485a6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+button#playAgain {
+    background-color: #b08dd693;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
