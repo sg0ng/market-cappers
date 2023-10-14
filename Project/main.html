@@ -15,8 +15,8 @@
                 <p>Test</p> <!-- Question text goes here -->
             </div>
             <div id="options">
-                <input type="button" onclick="window.open('test.html')" value="larger" id="higher">
-                <input type="button" onclick="window.open('test copy.html')" value="smaller" id="lower">
+                <input type="button" onclick="compareLarger()" value="larger" id="higher">
+                <input type="button" onclick="compareSmaller()" value="smaller" id="lower">
             </div>
             <div id="marketCap">
                 <p>Test Market Cap</p> <!-- Display the market cap here -->
@@ -36,6 +36,7 @@
     </main>
 
     <script>
+        let input = prompt();
         function a(){
             console.log("work");
         }
@@ -62,6 +63,17 @@
             }
             let result = Math.random() * ans * 0.06 + num[index];
             return result;
+        }
+        let guess = randomGenerate(input);
+        function compareLarger(){
+            if(guess >= input){
+                window.location.href='test.html';
+            }
+        }
+        function compareSmaller(){
+            if(guess <= input){
+                window.location.href='test copy.html';
+            }
         }
         console.log(randomGenerate(input));
     </script>
