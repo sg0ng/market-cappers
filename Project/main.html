@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Market Cappers</title>
     <link rel="stylesheet" type="text/css" href="web.css">
 </head>
+
 <body>
     <header>
         <h1>Market Cappers</h1>
     </header>
-    
+
     <main>
         <section id="game">
             <div id="question">
                 <p>Test</p> <!-- Question text goes here -->
-                <p id = "rand"></p>
+                <p id="rand"></p>
             </div>
-            
+
             <div id="options">
-                <input type="button" onclick="compareLarger()" value="larger" id="higher">
-                <input type="button" onclick="compareSmaller()" value="smaller" id="lower">
+                <input type="button" onclick="compareSmaller()" value="lower" id="lower" class="button">
+                <input type="button" onclick="compareLarger()" value="higher" id="higher" class="button">
             </div>
             <div id="marketCap">
                 <p>Test Market Cap</p> <!-- Display the market cap here -->
@@ -64,19 +66,20 @@
             return result;
         }
         let guess = randomGenerate(input);
-        function compareLarger(){
-            if(guess >= input){
-                window.location.href='test.html';
+        function compareLarger() {
+            if (guess >= input) {
+                window.location.href = 'test.html';
             }
         }
-        function compareSmaller(){
-            if(guess <= input){
-                window.location.href='test copy.html';
+        function compareSmaller() {
+            if (guess <= input) {
+                window.location.href = 'test copy.html';
             }
         }
         let temp = parseInt(randomGenerate(input));
         console.log(temp);
-        document.getElementById('rand').textContent= temp;
+        document.getElementById('rand').textContent = temp;
     </script>
 </body>
+
 </html>
