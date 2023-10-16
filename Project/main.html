@@ -13,7 +13,9 @@
         <section id="game">
             <div id="question">
                 <p>Test</p> <!-- Question text goes here -->
+                <p id = "rand"></p>
             </div>
+            
             <div id="options">
                 <input type="button" onclick="compareLarger()" value="larger" id="higher">
                 <input type="button" onclick="compareSmaller()" value="smaller" id="lower">
@@ -37,9 +39,6 @@
 
     <script>
         let input = prompt();
-        function a(){
-            console.log("work");
-        }
         function randomGenerate(ans) {
             let num = [];
             let temp = ans - ans * 0.3;   //design what are some possible answer range, right here I use 30% higher or lower
@@ -75,7 +74,9 @@
                 window.location.href='test copy.html';
             }
         }
-        console.log(randomGenerate(input));
+        let temp = parseInt(randomGenerate(input));
+        console.log(temp);
+        document.getElementById('rand').textContent= temp;
     </script>
 </body>
 </html>
