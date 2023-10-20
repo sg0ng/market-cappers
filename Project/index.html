@@ -58,6 +58,10 @@
         let input = prompt();
         // let input = 1000
 
+        //set highscore and currentscore to show 0 at round start
+        document.getElementById('currentScore').textContent = 0;
+        document.getElementById('highScore').textContent = 0;
+
         //Generates a random guess based on the answer
         //Returns the random guess
         function randomGenerate(ans) {
@@ -96,24 +100,32 @@
         //Displays guess and user input in console for testing purposes
         console.log(`Guess: ${guess}, Answer: ${input}`)
 
+        //initialize score variables
+        let currentScore = 0;
+        let highScore = 0;
+
         //selects the correct and incorrect modals
         let modalCorrect = document.querySelector(".modal__correct")
         let modalIncorrect = document.querySelector(".modal__incorrect")
 
-        //Checks if the user is correct with the guess that the answer is smaller
+        //Checks if the user is correct with the guess that the answer is smaller and update score
         function compareSmaller() {
             console.log(guess + " " + input)
-            if (guess >= input) {
+            if (guess <= input) {
+                currentScore = currentScore + 1;
+                document.getElementById('currentScore').textContent = currentScore;
                 modalCorrect.classList.remove("hidden")
             } else {
                 modalIncorrect.classList.remove("hidden")
             }
         }
 
-        //Checks if the user is correct with the guess that the answer is larger
+        //Checks if the user is correct with the guess that the answer is larger and update score
         function compareLarger() {
             console.log(guess + " " + input)
-            if (guess <= input) {
+            if (guess >= input) {
+                currentScore = currentScore + 1;
+                document.getElementById('currentScore').textContent = currentScore;
                 modalCorrect.classList.remove("hidden")
             } else {
                 modalIncorrect.classList.remove("hidden")
@@ -129,7 +141,6 @@
             guess = parseInt(randomGenerate(input));
             document.getElementById('rand').textContent = guess;
 
-            modalIncorrect.classList.add("hidden")
             modalCorrect.classList.add("hidden")
         }
 
@@ -145,9 +156,9 @@
                 highScore = currentScore;
                 document.getElementById('highScore').textContent = currentScore;
             }
-            document.getElementById('currentScore').textContent = 0;
+            currentScore = 0;
+            document.getElementById('currentScore').textContent = currentScore;
 
-            modalCorrect.classList.add("hidden")
             modalIncorrect.classList.add("hidden")
         }
     </script>
