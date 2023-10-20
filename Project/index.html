@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Market Cappers</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Market Cappers</h1>
+    </header>
+
+    <main>
+        <section id="game">
+            <div id="question">
+                <p>Test</p> <!-- Question text goes here -->
+                <p id="rand"></p>
+            </div>
+
+            <div id="options">
+                <input type="button" onclick="compareSmaller()" value="lower" id="lower" class="button">
+                <input type="button" onclick="compareLarger()" value="higher" id="higher" class="button">
+            </div>
+            <div id="marketCap">
+                <p>Test Market Cap</p> <!-- Display the market cap here -->
+            </div>
+        </section>
+
+        <section id="score">
+            <p>Score: <span id="currentScore"></span></p>
+            <p>High Score: <span id="highScore"></span></p>
+        </section>
+
+        <div class="modal__correct hidden">
+            <div class="modal__content">
+                <h2>Correct Answer!</h2>
+                <p>Click to view the next question</p>
+            </div>
+            <div class="modal__input">
+                <button class="modal__btn" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+
+        <div class="modal__incorrect hidden">
+            <div class="modal__content">
+                <h2>Incorrect Answer!</h2>
+                <p>Click to play again</p>
+            </div>
+            <div class="modal__input">
+                <button class="modal__btn" onclick="restartGame()">Restart</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        //Asks the user for an answer (Testing purposes)
+        let input = prompt();
+        // let input = 1000
+
+        //Generates a random guess based on the answer
+        //Returns the random guess
+        function randomGenerate(ans) {
+            let num = [];
+            let temp = ans - ans * 0.3;   //design what are some possible answer range, right here I use 30% higher or lower
+            let weights = [1, 2, 2, 2.5, 3, 3, 2.5, 2, 2, 1];   //use this array to modify weight
+            let totalWeight = 0;
+            let index = -1;
+            for (let i = 0; i < weights.length; i++) {
+                totalWeight += weights[i];
+            }
+            let random = Math.random() * totalWeight;
+            for (let i = 0; i < weights.length; i++) {
+                if (random < weights[i]) {
+                    index = i;
+                    break;
+                }
+                random -= weights[i];
+            }
+            for (let i = 0; i < 10; i++) {    //this for loop is use to connect weight and range
+                num[i] = temp;
+                temp += ans * 0.06;
+            }
+            let result = Math.random() * ans * 0.06 + num[index];
+            return result;
+        }
+
+        //Creates the guess and displays it on the screen
+        let guess = parseInt(randomGenerate(input));
+        document.getElementById('rand').textContent = guess;
+
+        //Displays guess and user input in console for testing purposes
+        console.log(`Guess: ${guess}, Answer: ${input}`)
+
+        //selects the correct and incorrect modals
+        let modalCorrect = document.querySelector(".modal__correct")
+        let modalIncorrect = document.querySelector(".modal__incorrect")
+
+        //Checks if the user is correct with the guess that the answer is smaller
+        function compareSmaller() {
+            console.log(guess + " " + input)
+            if (guess >= input) {
+                modalCorrect.classList.remove("hidden")
+            } else {
+                modalIncorrect.classList.remove("hidden")
+            }
+        }
+
+        //Checks if the user is correct with the guess that the answer is larger
+        function compareLarger() {
+            console.log(guess + " " + input)
+            if (guess <= input) {
+                modalCorrect.classList.remove("hidden")
+            } else {
+                modalIncorrect.classList.remove("hidden")
+            }
+        }
+
+        //Need to implement: 
+        //Has to generate a new input and new guess for that input.
+        //Has to update score
+        //Has to display all this information
+        function nextQuestion() {
+            modalCorrect.classList.add("hidden")
+        }
+
+        //Need to implement:
+        //Has to genereate a new input and new guess for that input.
+        //Has to set score to 0
+        //Has to update highscore if score was greater than the past one
+        //Has to display all this information
+        function restartGame() {
+            modalIncorrect.classList.add("hidden")
+        }
+    </script>
+</body>
+
+</html>

@@ -41,13 +41,32 @@ main {
     margin: 20px 0;
 }
 
-.button {
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
-    color: black;
-    font-size: 30px;
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.button {
+    background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 8px 0 0 #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    height: 190px;
+    width: 190px;
+    margin: 20px;
+}
+   
+.button:hover {
+    top: 8px;
+    filter: brightness(0.95);
+    box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
 
 #lower {
     background-color: rgb(180, 81, 81);
@@ -96,6 +115,28 @@ footer {
 
 button#playAgain {
     background-color: #b08dd693;
+}
+
+.modal__correct, .modal__incorrect {
+    position: fixed;
+    width: 840px;
+    height: 425px;
+    background: white;
+    top: calc(50% - 240px);
+    left: calc(50% - 420px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.modal__content {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
 
