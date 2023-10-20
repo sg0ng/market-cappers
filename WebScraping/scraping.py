@@ -11,7 +11,7 @@ results.pop(0)
 results.pop(len(results)-1)
 # print(results)
 
-with open('capdata.csv', 'w', newline='', encoding='utf8') as f:
+with open('WebScraping/capdata.csv', 'w', newline='', encoding='utf8') as f:
     thewriter = writer(f)
     header = ['Company', 'Market Cap']
     thewriter.writerow(header)
