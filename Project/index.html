@@ -72,7 +72,7 @@
             let index = -1;
             while (true) {
                 for (let i = 0; i < weights.length; i++) {
-                totalWeight += weights[i];
+                    totalWeight += weights[i];
                 }
                 let random = Math.random() * totalWeight;
                 for (let i = 0; i < weights.length; i++) {
@@ -111,7 +111,7 @@
         //Checks if the user is correct with the guess that the answer is smaller and update score
         function compareSmaller() {
             console.log(guess + " " + input)
-            if (guess <= input) {
+            if (guess >= input) {
                 currentScore = currentScore + 1;
                 document.getElementById('currentScore').textContent = currentScore;
                 modalCorrect.classList.remove("hidden")
@@ -123,7 +123,7 @@
         //Checks if the user is correct with the guess that the answer is larger and update score
         function compareLarger() {
             console.log(guess + " " + input)
-            if (guess >= input) {
+            if (guess <= input) {
                 currentScore = currentScore + 1;
                 document.getElementById('currentScore').textContent = currentScore;
                 modalCorrect.classList.remove("hidden")
@@ -140,6 +140,7 @@
             input = prompt(); //input 
             guess = parseInt(randomGenerate(input));
             document.getElementById('rand').textContent = guess;
+            console.log(`Guess: ${guess}, Answer: ${input}`)
 
             modalCorrect.classList.add("hidden")
         }
