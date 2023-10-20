@@ -66,23 +66,27 @@
             let weights = [1, 2, 2, 2.5, 3, 3, 2.5, 2, 2, 1];   //use this array to modify weight
             let totalWeight = 0;
             let index = -1;
-            for (let i = 0; i < weights.length; i++) {
+            while (true) {
+                for (let i = 0; i < weights.length; i++) {
                 totalWeight += weights[i];
-            }
-            let random = Math.random() * totalWeight;
-            for (let i = 0; i < weights.length; i++) {
-                if (random < weights[i]) {
-                    index = i;
-                    break;
                 }
-                random -= weights[i];
+                let random = Math.random() * totalWeight;
+                for (let i = 0; i < weights.length; i++) {
+                    if (random < weights[i]) {
+                        index = i;
+                        break;
+                    }
+                    random -= weights[i];
+                }
+                for (let i = 0; i < 10; i++) {    //this for loop is use to connect weight and range
+                    num[i] = temp;
+                    temp += ans * 0.06;
+                }
+                let result = Math.random() * ans * 0.06 + num[index];
+                if (ans !== result) {
+                    return result;
+                }
             }
-            for (let i = 0; i < 10; i++) {    //this for loop is use to connect weight and range
-                num[i] = temp;
-                temp += ans * 0.06;
-            }
-            let result = Math.random() * ans * 0.06 + num[index];
-            return result;
         }
 
         //Creates the guess and displays it on the screen
@@ -121,6 +125,11 @@
         //Has to update score
         //Has to display all this information
         function nextQuestion() {
+            input = 1000; //input 
+            guess = parseInt(randomGenerate(input));
+            document.getElementById('rand').textContent = guess;
+
+            modalIncorrect.classList.add("hidden")
             modalCorrect.classList.add("hidden")
         }
 
