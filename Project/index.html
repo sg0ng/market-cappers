@@ -137,7 +137,7 @@
         //Has to update score
         //Has to display all this information
         function nextQuestion() {
-            input = 1000; //input 
+            input = prompt(); //input 
             guess = parseInt(randomGenerate(input));
             document.getElementById('rand').textContent = guess;
 
@@ -145,12 +145,12 @@
         }
 
         //Need to implement:
-        //Has to genereate a new input and new guess for that input.
+        //Has to generate a new input and new guess for that input.
         //Has to set score to 0
         //Has to update highscore if score was greater than the past one
         //Has to display all this information
         function restartGame() {
-            input = 1000; //input
+            input = prompt(); //input
             guess = parseInt(randomGenerate(input));
             if (currentScore > highScore) {
                 highScore = currentScore;
