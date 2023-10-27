@@ -21,7 +21,7 @@ with open('WebScraping/capdata.csv', 'w', newline='', encoding='utf8') as f:
         name = nameRaw.strip()
         capRaw = result.find_all('td', class_='')[3].text
 
-        cap = capRaw.replace("\xa0", "")
+        cap = capRaw.replace("\xa0", "").strip().replace(",", "")
         info = [name, cap]
         thewriter.writerow(info)
 

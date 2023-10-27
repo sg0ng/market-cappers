@@ -118,7 +118,7 @@ button#playAgain {
     background-color: #b08dd693;
 }
 
-.modal__correct, .modal__incorrect {
+.modal__correct, .modal__incorrect, .modal__start {
     position: fixed;
     width: 840px;
     height: 450px;
