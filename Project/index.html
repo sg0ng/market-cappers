@@ -132,10 +132,7 @@
             }
         }
 
-        //Need to implement: 
-        //Has to generate a new input and new guess for that input.
-        //Has to update score
-        //Has to display all this information
+        //generate new input, updates score
         function nextQuestion() {
             input = prompt(); //input 
             guess = parseInt(randomGenerate(input));
@@ -145,11 +142,7 @@
             modalCorrect.classList.add("hidden")
         }
 
-        //Need to implement:
-        //Has to generate a new input and new guess for that input.
-        //Has to set score to 0
-        //Has to update highscore if score was greater than the past one
-        //Has to display all this information
+        //generate new input, guess, set score to 0, update highscore, display all -- sometimes generates same value as before
         function restartGame() {
             input = prompt(); //input
             guess = parseInt(randomGenerate(input));
