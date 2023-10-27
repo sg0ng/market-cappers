@@ -64,8 +64,10 @@ function compareSmaller() {
         currentScore = currentScore + 1;
         document.getElementById('currentScore').textContent = currentScore;
         modalCorrect.classList.remove("hidden")
+        document.body.style.backgroundColor = "green"
     } else {
         modalIncorrect.classList.remove("hidden")
+        document.body.style.backgroundColor = "red"
     }
 }
 
@@ -76,8 +78,10 @@ function compareLarger() {
         currentScore = currentScore + 1;
         document.getElementById('currentScore').textContent = currentScore;
         modalCorrect.classList.remove("hidden")
+        document.body.style.backgroundColor = "green"
     } else {
         modalIncorrect.classList.remove("hidden")
+        document.body.style.backgroundColor = "red"
     }
 }
 
@@ -111,5 +115,6 @@ function restartGame() {
     document.getElementById('currentScore').textContent = currentScore;
 
     modalIncorrect.classList.add("hidden")
+    document.body.style.backgroundColor = "white"
 }
 
