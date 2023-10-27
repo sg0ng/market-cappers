@@ -54,6 +54,11 @@
     </main>
 
     <script>
+        // import data from "../WebScraping/capdata.json" assert { type: 'json' }
+
+        // console.log(data)
+
+
         //Asks the user for an answer (Testing purposes)
         let input = prompt();
         // let input = 1000
@@ -132,7 +137,7 @@
             }
         }
 
-        //Need to implement: 
+
         //Has to generate a new input and new guess for that input.
         //Has to update score
         //Has to display all this information
@@ -145,7 +150,6 @@
             modalCorrect.classList.add("hidden")
         }
 
-        //Need to implement:
         //Has to generate a new input and new guess for that input.
         //Has to set score to 0
         //Has to update highscore if score was greater than the past one
@@ -153,6 +157,8 @@
         function restartGame() {
             input = prompt(); //input
             guess = parseInt(randomGenerate(input));
+            document.getElementById('rand').textContent = guess;
+
             if (currentScore > highScore) {
                 highScore = currentScore;
                 document.getElementById('highScore').textContent = currentScore;
@@ -162,6 +168,8 @@
 
             modalIncorrect.classList.add("hidden")
         }
+
+
     </script>
 </body>
 
