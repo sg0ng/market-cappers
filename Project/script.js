@@ -1,15 +1,58 @@
-// import data from "../WebScraping/capdata.json" assert { type: 'json' }
 
-// console.log(data)
+//initialize score variables
+let currentScore = 0;
+let highScore = 0;
+let guess;
+let input = 1000;
+let randomIndex;
+let companyTitle;
+
+//selects the correct and incorrect modals
+let modalCorrect = document.querySelector(".modal__correct")
+let modalIncorrect = document.querySelector(".modal__incorrect")
+let modalStart = document.querySelector(".modal__start")
+let companyText = document.querySelector(".company__text")
+let capText = document.querySelector(".cap__text")
+
+let data;
+
+//Retrieving JSON file
+fetch('../WebScraping/capdata.json')
+    .then((response) => response.json())
+    .then((json) => getData(json));
 
 
-//Asks the user for an answer (Testing purposes)
-let input = prompt();
-// let input = 1000
+function getData(json) {
+    console.log("Done")
+    data = json;
+}
 
-//set highscore and currentscore to show 0 at round start
-document.getElementById('currentScore').textContent = 0;
-document.getElementById('highScore').textContent = 0;
+function startup() {
+
+    modalStart.classList.add("hidden")
+
+    document.getElementById('currentScore').textContent = 0;
+    document.getElementById('highScore').textContent = 0;
+
+    randomIndex = getRandomIndex()
+
+    companyTitle = data[randomIndex][0]
+    input = parseInt(data[randomIndex][1])
+
+    guess = parseInt(randomGenerate(input));
+    capText.textContent = guess;
+    companyText.textContent = companyTitle
+
+    //Displays guess and user input in console for testing purposes
+    console.log(`Guess: ${guess}, Answer: ${input}`)
+
+}
+
+
+function getRandomIndex() {
+    return Math.floor(Math.random() * data.length);
+}
+
 
 //Generates a random guess based on the answer
 //Returns the random guess
@@ -41,21 +84,6 @@ function randomGenerate(ans) {
         }
     }
 }
-
-//Creates the guess and displays it on the screen
-let guess = parseInt(randomGenerate(input));
-document.getElementById('rand').textContent = guess;
-
-//Displays guess and user input in console for testing purposes
-console.log(`Guess: ${guess}, Answer: ${input}`)
-
-//initialize score variables
-let currentScore = 0;
-let highScore = 0;
-
-//selects the correct and incorrect modals
-let modalCorrect = document.querySelector(".modal__correct")
-let modalIncorrect = document.querySelector(".modal__incorrect")
 
 //Checks if the user is correct with the guess that the answer is smaller and update score
 function compareSmaller() {
@@ -90,9 +118,15 @@ function compareLarger() {
 //Has to update score
 //Has to display all this information
 function nextQuestion() {
-    input = prompt(); //input 
+    randomIndex = getRandomIndex()
+
+    companyTitle = data[randomIndex][0]
+    input = parseInt(data[randomIndex][1])
+
     guess = parseInt(randomGenerate(input));
-    document.getElementById('rand').textContent = guess;
+    capText.textContent = guess;
+    companyText.textContent = companyTitle
+
     console.log(`Guess: ${guess}, Answer: ${input}`)
 
     modalCorrect.classList.add("hidden")
@@ -103,9 +137,14 @@ function nextQuestion() {
 //Has to update highscore if score was greater than the past one
 //Has to display all this information
 function restartGame() {
-    input = prompt(); //input
+    randomIndex = getRandomIndex()
+
+    companyTitle = data[randomIndex][0]
+    input = parseInt(data[randomIndex][1])
+
     guess = parseInt(randomGenerate(input));
-    document.getElementById('rand').textContent = guess;
+    capText.textContent = guess;
+    companyText.textContent = companyTitle
 
     if (currentScore > highScore) {
         highScore = currentScore;
