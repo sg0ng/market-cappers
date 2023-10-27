@@ -1,11 +1,32 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from bs4 import BeautifulSoup
+import csv
 
-website = 'https://www.tradingview.com/screener/?aff_id=4191'
-path = 'C:/Users/sherr/Downloads/chromedriver_win32/chromedriver.exe'
-driver = webdriver.Chrome(path)
-driver.get(website)
-table = driver.find_element(By.CLASS_NAME, "tv-data-table__tbody")
-companies = driver.find_elements_by_tag('tr')
+url = "https://www.tradingview.com/screener/?aff_id=4191"
 
-for company in companies:
-    print(company.text)
+webdriver_path = "C:\Users\sherr\Downloads\chromedriver_win32\chromedriver.exe"
+
+#initialize
+driver = webdriver.Chrome(executable_path=webdriver_path)
+
+#open page
+driver.get(url)
+
+soup = BeautifulSoup(driver.page_source, 'html.parser')
+results = soup.find_all("tbody", class="tv-data-table__tbody")
+
+#csv
+with open('WebScraping/capdata.csv', 'w', newline='', encoding='utf8') as f:
+    thewriter = writer(f)
+    header = ['Company', 'Market Cap']
+    thewriter.writerow(header)
+    count = 0
+    for result in results:
+        nameRaw = result.find_all('a', class="tv-screener__symbol apply-common-tooltip")[1].text
+        name = nameRaw.strip()
+        capRaw = result.find_all('td', class="tv-data-table__cell tv-screener-table__cell tv-screener-table__cell--with-marker")[3].text
+        cap = capRaw.strip()
+
+#close
+driver.quit()
