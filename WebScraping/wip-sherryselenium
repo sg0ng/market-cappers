@@ -1,32 +1,33 @@
+from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
-from selenium.webdriver.common.by import By
+from csv import writer
+import requests
 from bs4 import BeautifulSoup
-import csv
+from selenium.webdriver import Chrome
+from selenium.webdriver.common.by import By
+from selenium import webdriver
 
-url = "https://www.tradingview.com/screener/?aff_id=4191"
+driver = Chrome()
 
-webdriver_path = "C:\Users\sherr\Downloads\chromedriver_win32\chromedriver.exe"
+driver.get("https://www.tradingview.com/screener/?aff_id=4191")
 
-#initialize
-driver = webdriver.Chrome(executable_path=webdriver_path)
+table = driver.find_element(By.CLASS_NAME, "tv-data-table__tbody")
 
-#open page
-driver.get(url)
+#soup
+soup = BeautifulSoup(table.get_attribute('outerHTML'), 'html.parser')
 
-soup = BeautifulSoup(driver.page_source, 'html.parser')
-results = soup.find_all("tbody", class="tv-data-table__tbody")
+rows = soup.find_all("tr", class_="tv-data-table__row tv-data-table__stroke tv-screener-table__result-row")
 
 #csv
-with open('WebScraping/capdata.csv', 'w', newline='', encoding='utf8') as f:
+with open('webscraping.csv', 'w', newline='', encoding='utf8') as f:
     thewriter = writer(f)
     header = ['Company', 'Market Cap']
     thewriter.writerow(header)
-    count = 0
-    for result in results:
-        nameRaw = result.find_all('a', class="tv-screener__symbol apply-common-tooltip")[1].text
-        name = nameRaw.strip()
-        capRaw = result.find_all('td', class="tv-data-table__cell tv-screener-table__cell tv-screener-table__cell--with-marker")[3].text
-        cap = capRaw.strip()
 
-#close
+    for row in rows:
+        name = row[1].find("a", class_="tv-screener__symbol apply-common-tooltip").text.strip()
+        cap = row[3].find("a", class_="tv-data-table__cell tv-screener-table__cell tv-screener-table__cell--with-marker").text.strip()
+        thewriter.writerow([name, cap])
+        print(row)
+
 driver.quit()
