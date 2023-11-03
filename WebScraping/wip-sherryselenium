@@ -1,14 +1,11 @@
 from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 from csv import writer
-import requests
 from bs4 import BeautifulSoup
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
-from selenium import webdriver
 
 driver = Chrome()
-
 driver.get("https://www.tradingview.com/screener/?aff_id=4191")
 
 table = driver.find_element(By.CLASS_NAME, "tv-data-table__tbody")
@@ -19,14 +16,14 @@ soup = BeautifulSoup(table.get_attribute('outerHTML'), 'html.parser')
 rows = soup.find_all("tr", class_="tv-data-table__row tv-data-table__stroke tv-screener-table__result-row")
 
 #csv
-with open('webscraping.csv', 'w', newline='', encoding='utf8') as f:
+with open('Webscraping/webscraping.csv', 'w', newline='', encoding='utf8') as f:
     thewriter = writer(f)
     header = ['Company', 'Market Cap']
     thewriter.writerow(header)
 
     for row in rows:
-        name = row[1].find("a", class_="tv-screener__symbol apply-common-tooltip").text.strip()
-        cap = row[3].find("a", class_="tv-data-table__cell tv-screener-table__cell tv-screener-table__cell--with-marker").text.strip()
+        name = row.find("a", class_="tv-screener__symbol apply-common-tooltip").text.strip()
+        cap = row.find("a", class_="tv-data-table__cell tv-screener-table__cell tv-screener-table__cell--with-marker").text.strip()
         thewriter.writerow([name, cap])
         print(row)
 
