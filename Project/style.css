@@ -141,9 +141,9 @@ button#playAgain {
 .modal__correct, .modal__incorrect, .modal__start {
     position: fixed;
     width: 840px;
-    height: 450px;
-    background: white;
-    top: 85px;
+    height: 455px;
+    background: rgb(255, 255, 255);
+    top: 150px;
     left: calc(50% - 420px);
     display: flex;
     align-items: center;
