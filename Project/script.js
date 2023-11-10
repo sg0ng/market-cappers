@@ -27,6 +27,10 @@ function getData(json) {
     data = json;
 }
 
+function numberWithCommas(x) {
+    return "$" + x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function startup() {
 
     modalStart.classList.add("hidden")
@@ -37,14 +41,20 @@ function startup() {
     randomIndex = getRandomIndex()
 
     companyTitle = data[randomIndex][0]
-    input = parseInt(data[randomIndex][1])
+    input = data[randomIndex][1]
+    input = input - (input % 100000000)
+
+    inputstring = numberWithCommas(input)
+
+
 
     guess = parseInt(randomGenerate(input));
-    capText.textContent = guess;
+    guessstring = numberWithCommas(guess)
+    capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
     //Displays guess and user input in console for testing purposes
-    console.log(`Guess: ${guess}, Answer: ${input}`)
+    console.log(`Guess: ${guessstring}, Answer: ${inputstring}`)
 
 }
 
@@ -58,8 +68,8 @@ function getRandomIndex() {
 //Returns the random guess
 function randomGenerate(ans) {
     let num = [];
-    let temp = ans - ans * 0.3;   //design what are some possible answer range, right here I use 30% higher or lower
-    let weights = [1, 2, 2, 2.5, 3, 3, 2.5, 2, 2, 1];   //use this array to modify weight
+    let temp = ans - ans * 0.5;   //design what are some possible answer range, right here I use 30% higher or lower
+    let weights = [1, 2, 2, 2.5, 3, 3, 2.5, 2, 2, 1];
     let totalWeight = 0;
     let index = -1;
     while (true) {
@@ -80,7 +90,7 @@ function randomGenerate(ans) {
         }
         let result = Math.random() * ans * 0.06 + num[index];
         if (ans !== result) {
-            return result - (result % 1000000);
+            return result - (result % 100000000);
         }
     }
 }
@@ -91,11 +101,11 @@ function compareSmaller() {
     if (guess >= input) {
         currentScore = currentScore + 1;
         document.getElementById('currentScore').textContent = currentScore;
-        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + input;
+        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + input;
+        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
@@ -106,12 +116,12 @@ function compareLarger() {
     console.log(guess + " " + input)
     if (guess <= input) {
         currentScore = currentScore + 1;
-        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + input;
+        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
         document.getElementById('currentScore').textContent = currentScore;
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + input;
+        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
@@ -125,13 +135,20 @@ function nextQuestion() {
     randomIndex = getRandomIndex()
 
     companyTitle = data[randomIndex][0]
-    input = parseInt(data[randomIndex][1])
+    input = data[randomIndex][1]
+    input = input - (input % 100000000)
+
+    inputstring = numberWithCommas(input)
+
+
 
     guess = parseInt(randomGenerate(input));
-    capText.textContent = guess;
+    guessstring = numberWithCommas(guess)
+
+    capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
-    console.log(`Guess: ${guess}, Answer: ${input}`)
+    console.log(`Guess: ${guessstring}, Answer: ${inputstring}`)
 
     modalCorrect.classList.add("hidden")
 }
@@ -144,10 +161,16 @@ function restartGame() {
     randomIndex = getRandomIndex()
 
     companyTitle = data[randomIndex][0]
-    input = parseInt(data[randomIndex][1])
+    input = data[randomIndex][1]
+    input = input - (input % 100000000)
+
+    inputstring = numberWithCommas(input)
+
+
 
     guess = parseInt(randomGenerate(input));
-    capText.textContent = guess;
+    guessstring = numberWithCommas(guess)
+    capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
     if (currentScore > highScore) {
