@@ -43,6 +43,9 @@ with open('Webscraping/seleniumdata.csv', 'w', newline='', encoding='utf8') as f
             elif cap.endswith('T'):
                 cap = int(float(cap[:-1]) * 1000000000000)
 
+            if str(cap).endswith('9999'):
+                cap = str(int(cap) + 1)
+        
             thewriter.writerow([name, cap])
             print(cap)
             count += 1
