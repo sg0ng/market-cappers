@@ -17,7 +17,7 @@ let capText = document.querySelector(".cap__text")
 let data;
 
 //Retrieving JSON file
-fetch('../WebScraping/capdata.json')
+fetch('capdata.json')
     .then((response) => response.json())
     .then((json) => getData(json));
 
@@ -91,11 +91,11 @@ function compareSmaller() {
     if (guess >= input) {
         currentScore = currentScore + 1;
         document.getElementById('currentScore').textContent = currentScore;
-        document.getElementById('ansForCorrect').textContent = "The capital value of "  + companyTitle + " is " + input;
+        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + input;
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of "  + companyTitle + " is " + input;
+        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + input;
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
@@ -106,12 +106,12 @@ function compareLarger() {
     console.log(guess + " " + input)
     if (guess <= input) {
         currentScore = currentScore + 1;
-        document.getElementById('ansForCorrect').textContent = "The capital value of "  + companyTitle + " is " + input;
+        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + input;
         document.getElementById('currentScore').textContent = currentScore;
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of "  + companyTitle + " is " + input;
+        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + input;
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
