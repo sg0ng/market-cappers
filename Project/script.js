@@ -31,6 +31,15 @@ function numberWithCommas(x) {
     return "$" + x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+function formatNumber(x) {
+    if (x >= 1000000000) {
+        return "$" + (x / 1000000000) + " billion"
+    }
+    else if (x >= 1000000) {
+        return "$" + (x / 1000000) + " million"
+    }
+}
+
 function startup() {
 
     modalStart.classList.add("hidden")
@@ -44,12 +53,12 @@ function startup() {
     input = data[randomIndex][1]
     input = input - (input % 100000000)
 
-    inputstring = numberWithCommas(input)
+    inputstring = formatNumber(input)
 
 
 
     guess = parseInt(randomGenerate(input));
-    guessstring = numberWithCommas(guess)
+    guessstring = formatNumber(guess)
     capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
@@ -138,12 +147,12 @@ function nextQuestion() {
     input = data[randomIndex][1]
     input = input - (input % 100000000)
 
-    inputstring = numberWithCommas(input)
+    inputstring = formatNumber(input)
 
 
 
     guess = parseInt(randomGenerate(input));
-    guessstring = numberWithCommas(guess)
+    guessstring = formatNumber(guess)
 
     capText.textContent = guessstring;
     companyText.textContent = companyTitle
@@ -164,12 +173,12 @@ function restartGame() {
     input = data[randomIndex][1]
     input = input - (input % 100000000)
 
-    inputstring = numberWithCommas(input)
+    inputstring = formatNumber(input)
 
 
 
     guess = parseInt(randomGenerate(input));
-    guessstring = numberWithCommas(guess)
+    guessstring = formatNumber(guess)
     capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
