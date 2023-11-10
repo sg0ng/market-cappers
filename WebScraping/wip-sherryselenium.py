@@ -10,14 +10,14 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 driver = Chrome()
-driver.get("https://www.tradingview.com/screener/?aff_id=4191")
+driver.get("https://www.tradingview.com/screener")
 
 table = driver.find_element(By.CLASS_NAME, "tv-data-table__tbody")
 
 #soup
 soup = BeautifulSoup(table.get_attribute('outerHTML'), 'html.parser')
-
-rows = soup.find_all("tv-data-table__row tv-data-table__stroke tv-screener-table__result-row")
+#rows = soup.find_all("tv-data-table__row tv-data-table__stroke tv-screener-table__result-row")
+rows = soup.findAll(xpath_= '//*[@id="js-screener-container"]/div[4]/table/tbody')
 print(rows)
 #csv
 
