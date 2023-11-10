@@ -4,16 +4,20 @@ from csv import writer
 from bs4 import BeautifulSoup
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
+import time
 
 driver = Chrome()
 driver.get("https://www.tradingview.com/screener")
 driver.implicitly_wait(15)
 
+for _ in range(3):
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(2)
 
 rows = driver.find_elements(By.XPATH, '//*[@id="js-screener-container"]/div[4]/table/tbody/tr')
 
 #csv
-with open('Webscraping/webscraping.csv', 'w', newline='', encoding='utf8') as f:
+with open('Webscraping/seleniumdata.csv', 'w', newline='', encoding='utf8') as f:
     thewriter = writer(f)
     header = ['Company', 'Market Cap']
     thewriter.writerow(header)
@@ -27,7 +31,7 @@ with open('Webscraping/webscraping.csv', 'w', newline='', encoding='utf8') as f:
             name_element = row.find_element(By.XPATH, './td[1]/div/div[2]/span[2]')
 
             name = name_element.text.strip()
-            if name.startswith('\"') and name.endswith('\"'):
+            if name.startswith('"') and name.endswith('"'):
                 name = name[1:-1]
             print(name)
         
@@ -35,12 +39,12 @@ with open('Webscraping/webscraping.csv', 'w', newline='', encoding='utf8') as f:
             cap = cap[:-3]
 
             if cap.endswith('B'):
-                cap = float(cap[:-1]) * 1000000000
+                cap = int(float(cap[:-1]) * 1000000000)
             elif cap.endswith('T'):
-                cap = float(cap[:-1]) * 1000000000000
+                cap = int(float(cap[:-1]) * 1000000000000)
 
             thewriter.writerow([name, cap])
             print(cap)
-          
+            count += 1
 
 driver.quit()
