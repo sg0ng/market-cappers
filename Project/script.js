@@ -75,10 +75,15 @@ function getRandomIndex() {
 
 //Generates a random guess based on the answer
 //Returns the random guess
+function randomGenerateTest() {
+    for(let i = 0; i < 10; i++) {
+        console.log(randomGenerate(100));
+    }
+}
 function randomGenerate(ans) {
     let num = [];
-    let temp = ans - ans * 0.5;   //design what are some possible answer range, right here I use 30% higher or lower
-    let weights = [1, 2, 2, 2.5, 3, 3, 2.5, 2, 2, 1];
+    let temp = ans - ans * 0.8;   //design what are some possible answer range, right here I use 30% higher or lower
+    let weights = [1, 1, 1, 1, 1.5, 0, 0, 0, 0, 0, 0, 1.5, 1, 1, 1, 1];
     let totalWeight = 0;
     let index = -1;
     while (true) {
@@ -93,13 +98,13 @@ function randomGenerate(ans) {
             }
             random -= weights[i];
         }
-        for (let i = 0; i < 10; i++) {    //this for loop is use to connect weight and range
+        for (let i = 0; i < 16; i++) {    //this for loop is use to connect weight and range
             num[i] = temp;
-            temp += ans * 0.06;
+            temp += ans * 0.1;
         }
-        let result = Math.random() * ans * 0.06 + num[index];
+        let result = Math.random() * ans * 0.1 + num[index];
         if (ans !== result) {
-            return result - (result % 100000000);
+            return result;
         }
     }
 }
