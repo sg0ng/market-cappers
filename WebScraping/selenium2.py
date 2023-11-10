@@ -10,7 +10,7 @@ driver.get("https://www.tradingview.com/screener")
 driver.implicitly_wait(15)
 
 
-rows = driver.find_elements(By.XPATH, '//*[@id="js-screener-container"]/div[4]/table/tbody/tr[1]')
+rows = driver.find_elements(By.XPATH, '//*[@id="js-screener-container"]/div[4]/table/tbody/tr')
 
 #csv
 with open('Webscraping/webscraping.csv', 'w', newline='', encoding='utf8') as f:
@@ -18,22 +18,29 @@ with open('Webscraping/webscraping.csv', 'w', newline='', encoding='utf8') as f:
     header = ['Company', 'Market Cap']
     thewriter.writerow(header)
 
-    
+    count = 0
+
     for row in rows:
-
-        name_element = row.find_element(By.XPATH, '//*[@id="js-screener-container"]/div[4]/table/tbody/tr[1]/td[1]/div/div[2]/span[2]')
-
-        if name_element:
-            name = name_element.text.strip()
-            print(name)
-
-            # Continue with the rest of the code
+        if count > 418:
+            break
         else:
-            print("Element not found")        
+            name_element = row.find_element(By.XPATH, './td[1]/div/div[2]/span[2]')
+
+            name = name_element.text.strip()
+            if name.startswith('\"') and name.endswith('\"'):
+                name = name[1:-1]
+            print(name)
         
-        cap = row.find_element(By.XPATH, '//*[@id="js-screener-container"]/div[4]/table/tbody/tr[1]/td[8]').text.strip()
-        thewriter.writerow([name, cap])
-        print(cap)
+            cap = row.find_element(By.XPATH, './td[8]').text.strip()
+            cap = cap[:-3]
+
+            if cap.endswith('B'):
+                cap = float(cap[:-1]) * 1000000000
+            elif cap.endswith('T'):
+                cap = float(cap[:-1]) * 1000000000000
+
+            thewriter.writerow([name, cap])
+            print(cap)
           
 
 driver.quit()
