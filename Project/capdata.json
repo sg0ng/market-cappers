@@ -1,2018 +1,890 @@
 [
-  [
-    "Description",
-    "Market Capitalization"
-  ],
-  [
-    "Apple Inc.",
-    "2728017215293"
-  ],
-  [
-    "Microsoft Corporation",
-    "2351371643107"
-  ],
-  [
-    "Alphabet Inc.",
-    "1611856497958"
-  ],
-  [
-    "Alphabet Inc.",
-    "1610343852181"
-  ],
-  [
-    "Amazon.com, Inc.",
-    "1366884251763"
-  ],
-  [
-    "NVIDIA Corporation",
-    "1069485293976"
-  ],
-  [
-    "Berkshire Hathaway Inc. New",
-    "768891898463"
-  ],
-  [
-    "Meta Platforms, Inc.",
-    "728967239293"
-  ],
-  [
-    "Tesla, Inc.",
-    "683964053782"
-  ],
-  [
-    "Eli Lilly and Company",
-    "518723331656"
-  ],
-  [
-    "Visa Inc.",
-    "485525515662"
-  ],
-  [
-    "UnitedHealth Group Incorporated",
-    "461707513407"
-  ],
-  [
-    "Johnson & Johnson",
-    "448296231871"
-  ],
-  [
-    "Exxon Mobil Corporation",
-    "440511349736"
-  ],
-  [
-    "JP Morgan Chase & Co.",
-    "432919527223"
-  ],
-  [
-    "Walmart Inc.",
-    "425279432050"
-  ],
-  [
-    "Mastercard Incorporated",
-    "369364486503"
-  ],
-  [
-    "Procter & Gamble Company (The)",
-    "359583481922"
-  ],
-  [
-    "Broadcom Inc.",
-    "340812095959"
-  ],
-  [
-    "Home Depot, Inc. (The)",
-    "329129972182"
-  ],
-  [
-    "Oracle Corporation",
-    "316102599449"
-  ],
-  [
-    "Chevron Corporation",
-    "306932521814"
-  ],
-  [
-    "Merck & Company, Inc.",
-    "277097314775"
-  ],
-  [
-    "AbbVie Inc.",
-    "265004108705"
-  ],
-  [
-    "Coca-Cola Company (The)",
-    "263568843499"
-  ],
-  [
-    "PepsiCo, Inc.",
-    "245279121127"
-  ],
-  [
-    "Costco Wholesale Corporation",
-    "241489319696"
-  ],
-  [
-    "Adobe Inc.",
-    "231605653875"
-  ],
-  [
-    "Bank of America Corporation",
-    "231318896391"
-  ],
-  [
-    "Cisco Systems, Inc.",
-    "224291209687"
-  ],
-  [
-    "Pfizer, Inc.",
-    "206980864752"
-  ],
-  [
-    "Thermo Fisher Scientific Inc",
-    "205471945947"
-  ],
-  [
-    "McDonald’s Corporation",
-    "205321797459"
-  ],
-  [
-    "Accenture plc",
-    "201246616516"
-  ],
-  [
-    "Salesforce, Inc.",
-    "199504416416"
-  ],
-  [
-    "Comcast Corporation",
-    "188766086139"
-  ],
-  [
-    "Danaher Corporation",
-    "185629109809"
-  ],
-  [
-    "Linde plc",
-    "183028485644"
-  ],
-  [
-    "Abbott Laboratories",
-    "179973982046"
-  ],
-  [
-    "Netflix, Inc.",
-    "179266158431"
-  ],
-  [
-    "Advanced Micro Devices, Inc.",
-    "170372551712"
-  ],
-  [
-    "Nike, Inc.",
-    "160367096321"
-  ],
-  [
-    "T-Mobile US, Inc.",
-    "160162887737"
-  ],
-  [
-    "Walt Disney Company (The)",
-    "157075139070"
-  ],
-  [
-    "Wells Fargo & Company",
-    "155498290602"
-  ],
-  [
-    "Texas Instruments Incorporated",
-    "151167305708"
-  ],
-  [
-    "Philip Morris International Inc",
-    "146479296866"
-  ],
-  [
-    "United Parcel Service, Inc.",
-    "146457435764"
-  ],
-  [
-    "Morgan Stanley",
-    "140659902525"
-  ],
-  [
-    "ConocoPhillips",
-    "140453676582"
-  ],
-  [
-    "Amgen Inc.",
-    "140047831256"
-  ],
-  [
-    "Caterpillar, Inc.",
-    "139677186754"
-  ],
-  [
-    "Verizon Communications Inc.",
-    "139490054291"
-  ],
-  [
-    "Union Pacific Corporation",
-    "137286101364"
-  ],
-  [
-    "NextEra Energy, Inc.",
-    "137268524235"
-  ],
-  [
-    "Intel Corporation",
-    "137157007708"
-  ],
-  [
-    "Boeing Company (The)",
-    "136716081029"
-  ],
-  [
-    "Intuit Inc.",
-    "136097826356"
-  ],
-  [
-    "Bristol-Myers Squibb Company",
-    "129649721909"
-  ],
-  [
-    "International Business Machines Corporation",
-    "128825393714"
-  ],
-  [
-    "Lowe’s Companies, Inc.",
-    "128534892552"
-  ],
-  [
-    "RTX Corporation",
-    "124883190494"
-  ],
-  [
-    "Honeywell International Inc.",
-    "123881919976"
-  ],
-  [
-    "QUALCOMM Incorporated",
-    "122871602043"
-  ],
-  [
-    "General Electric Company",
-    "121669808694"
-  ],
-  [
-    "S&P Global Inc.",
-    "121552406207"
-  ],
-  [
-    "Applied Materials, Inc.",
-    "119798366106"
-  ],
-  [
-    "American Express Company",
-    "118002804852"
-  ],
-  [
-    "Deere & Company",
-    "116403156028"
-  ],
-  [
-    "Prologis, Inc.",
-    "113828796051"
-  ],
-  [
-    "Lockheed Martin Corporation",
-    "113339268033"
-  ],
-  [
-    "Starbucks Corporation",
-    "111367244022"
-  ],
-  [
-    "ServiceNow, Inc.",
-    "110628454634"
-  ],
-  [
-    "Booking Holdings Inc. Common Stock",
-    "109161968068"
-  ],
-  [
-    "Elevance Health, Inc.",
-    "109053095545"
-  ],
-  [
-    "Medtronic plc.",
-    "108454644596"
-  ],
-  [
-    "Charles Schwab Corporation (The)",
-    "108392664416"
-  ],
-  [
-    "Goldman Sachs Group, Inc. (The)",
-    "107120020932"
-  ],
-  [
-    "Stryker Corporation",
-    "105544181735"
-  ],
-  [
-    "Automatic Data Processing, Inc.",
-    "103429305077"
-  ],
-  [
-    "TJX Companies, Inc. (The)",
-    "102879833860"
-  ],
-  [
-    "Intuitive Surgical, Inc.",
-    "100469864749"
-  ],
-  [
-    "AT&T Inc.",
-    "100443451641"
-  ],
-  [
-    "BlackRock, Inc.",
-    "100070096351"
-  ],
-  [
-    "Mondelez International, Inc.",
-    "96766517287"
-  ],
-  [
-    "Gilead Sciences, Inc.",
-    "94547572998"
-  ],
-  [
-    "Marsh & McLennan Companies, Inc.",
-    "93278220336"
-  ],
-  [
-    "Vertex Pharmaceuticals Incorporated",
-    "88996253919"
-  ],
-  [
-    "Analog Devices, Inc.",
-    "88903581159"
-  ],
-  [
-    "Regeneron Pharmaceuticals, Inc.",
-    "88178356962"
-  ],
-  [
-    "Lam Research Corporation",
-    "86522191352"
-  ],
-  [
-    "CVS Health Corporation",
-    "85810704307"
-  ],
-  [
-    "Eaton Corporation, PLC",
-    "85645351950"
-  ],
-  [
-    "Zoetis Inc.",
-    "83579740494"
-  ],
-  [
-    "Schlumberger N.V.",
-    "82471424751"
-  ],
-  [
-    "American Tower Corporation (REIT)",
-    "82187878166"
-  ],
-  [
-    "Chubb Limited",
-    "82105914715"
-  ],
-  [
-    "The Cigna Group",
-    "81693476157"
-  ],
-  [
-    "Citigroup, Inc.",
-    "81360929490"
-  ],
-  [
-    "Becton, Dickinson and Company",
-    "79399811792"
-  ],
-  [
-    "Progressive Corporation (The)",
-    "78393735374"
-  ],
-  [
-    "Altria Group, Inc.",
-    "76148513926"
-  ],
-  [
-    "EOG Resources, Inc.",
-    "76060734193"
-  ],
-  [
-    "Southern Company (The)",
-    "73949967038"
-  ],
-  [
-    "Boston Scientific Corporation",
-    "73489363770"
-  ],
-  [
-    "CME Group Inc.",
-    "73291701083"
-  ],
-  [
-    "Fiserv, Inc.",
-    "73202554483"
-  ],
-  [
-    "HCA Healthcare, Inc.",
-    "73175649258"
-  ],
-  [
-    "Illinois Tool Works Inc.",
-    "71297588138"
-  ],
-  [
-    "Activision Blizzard, Inc",
-    "71181646046"
-  ],
-  [
-    "Equinix, Inc.",
-    "70532986440"
-  ],
-  [
-    "Duke Energy Corporation (Holding Company)",
-    "70288528982"
-  ],
-  [
-    "Micron Technology, Inc.",
-    "69650232522"
-  ],
-  [
-    "Sherwin-Williams Company (The)",
-    "69468699540"
-  ],
-  [
-    "FedEx Corporation",
-    "66059205171"
-  ],
-  [
-    "Aon plc",
-    "65741012217"
-  ],
-  [
-    "KLA Corporation",
-    "65346729935"
-  ],
-  [
-    "PayPal Holdings, Inc.",
-    "65245385101"
-  ],
-  [
-    "Northrop Grumman Corporation",
-    "65084593072"
-  ],
-  [
-    "Synopsys, Inc.",
-    "64823017177"
-  ],
-  [
-    "Waste Management, Inc.",
-    "64351801621"
-  ],
-  [
-    "Palo Alto Networks, Inc.",
-    "64134694722"
-  ],
-  [
-    "Intercontinental Exchange Inc.",
-    "63734283637"
-  ],
-  [
-    "Air Products and Chemicals, Inc.",
-    "63272413581"
-  ],
-  [
-    "Charter Communications, Inc.",
-    "62932140344"
-  ],
-  [
-    "CSX Corporation",
-    "61935406680"
-  ],
-  [
-    "Colgate-Palmolive Company",
-    "61629853437"
-  ],
-  [
-    "General Dynamics Corporation",
-    "61276213340"
-  ],
-  [
-    "Humana Inc.",
-    "60762631654"
-  ],
-  [
-    "Target Corporation",
-    "60561239513"
-  ],
-  [
-    "Marriott International",
-    "60271239997"
-  ],
-  [
-    "Monster Beverage Corporation",
-    "60085650293"
-  ],
-  [
-    "Moody’s Corporation",
-    "60008170000"
-  ],
-  [
-    "Cadence Design Systems, Inc.",
-    "59943285720"
-  ],
-  [
-    "Marathon Petroleum Corporation",
-    "57825449488"
-  ],
-  [
-    "McKesson Corporation",
-    "56717006874"
-  ],
-  [
-    "Occidental Petroleum Corporation",
-    "56681568220"
-  ],
-  [
-    "O’Reilly Automotive, Inc.",
-    "56522324456"
-  ],
-  [
-    "U.S. Bancorp",
-    "56474449436"
-  ],
-  [
-    "Estee Lauder Companies, Inc. (The)",
-    "56003044623"
-  ],
-  [
-    "Arista Networks, Inc.",
-    "55891684799"
-  ],
-  [
-    "Freeport-McMoRan, Inc.",
-    "55682405984"
-  ],
-  [
-    "Pioneer Natural Resources Company",
-    "55454957524"
-  ],
-  [
-    "3M Company",
-    "55204764744"
-  ],
-  [
-    "Emerson Electric Company",
-    "54743986919"
-  ],
-  [
-    "Roper Technologies, Inc.",
-    "51684358159"
-  ],
-  [
-    "Ecolab Inc.",
-    "51120832419"
-  ],
-  [
-    "Parker-Hannifin Corporation",
-    "51031053903"
-  ],
-  [
-    "Chipotle Mexican Grill, Inc.",
-    "51015016997"
-  ],
-  [
-    "Phillips 66",
-    "50869691865"
-  ],
-  [
-    "Amphenol Corporation",
-    "50835765835"
-  ],
-  [
-    "NXP Semiconductors N.V.",
-    "50676169200"
-  ],
-  [
-    "Ventas, Inc.",
-    "50551953047"
-  ],
-  [
-    "Cintas Corporation",
-    "49389425174"
-  ],
-  [
-    "PNC Financial Services Group, Inc. (The)",
-    "49064967725"
-  ],
-  [
-    "Norfolk Southern Corporation",
-    "48152211047"
-  ],
-  [
-    "Public Storage",
-    "47892431291"
-  ],
-  [
-    "Ford Motor Company",
-    "47866618001"
-  ],
-  [
-    "Hess Corporation",
-    "47766412551"
-  ],
-  [
-    "Arthur J. Gallagher & Co.",
-    "47529846652"
-  ],
-  [
-    "Transdigm Group Inc.",
-    "47299142061"
-  ],
-  [
-    "Valero Energy Corporation",
-    "47171490774"
-  ],
-  [
-    "Keurig Dr Pepper Inc.",
-    "47157502166"
-  ],
-  [
-    "Constellation Brands, Inc.",
-    "47126533141"
-  ],
-  [
-    "MetLife, Inc.",
-    "46820918533"
-  ],
-  [
-    "Edwards Lifesciences Corporation",
-    "46554232956"
-  ],
-  [
-    "Motorola Solutions, Inc.",
-    "46378007432"
-  ],
-  [
-    "Republic Services, Inc.",
-    "46272159042"
-  ],
-  [
-    "General Motors Company",
-    "45569980121"
-  ],
-  [
-    "Trane Technologies plc",
-    "44982944153"
-  ],
-  [
-    "Fortinet, Inc.",
-    "44889857888"
-  ],
-  [
-    "The Hershey Company",
-    "44733542105"
-  ],
-  [
-    "Carrier Global Corporation",
-    "44720954523"
-  ],
-  [
-    "AutoZone, Inc.",
-    "44634454686"
-  ],
-  [
-    "DBA Sempra",
-    "44501454004"
-  ],
-  [
-    "AFLAC Incorporated",
-    "44465578484"
-  ],
-  [
-    "Archer-Daniels-Midland Company",
-    "44405297970"
-  ],
-  [
-    "PACCAR Inc.",
-    "44260681014"
-  ],
-  [
-    "Paychex, Inc.",
-    "43438555136"
-  ],
-  [
-    "Kimberly-Clark Corporation",
-    "43368862403"
-  ],
-  [
-    "Crown Castle Inc.",
-    "43276780689"
-  ],
-  [
-    "Microchip Technology Incorporated",
-    "43225585100"
-  ],
-  [
-    "Old Dominion Freight Line, Inc.",
-    "42995898919"
-  ],
-  [
-    "Autodesk, Inc.",
-    "42676891922"
-  ],
-  [
-    "Welltower Inc.",
-    "42426850696"
-  ],
-  [
-    "Williams Companies, Inc. (The)",
-    "42294976607"
-  ],
-  [
-    "Nucor Corporation",
-    "41869944440"
-  ],
-  [
-    "Copart, Inc.",
-    "41460875531"
-  ],
-  [
-    "The Kraft Heinz Company",
-    "41344396816"
-  ],
-  [
-    "American International Group, Inc. New",
-    "41254582631"
-  ],
-  [
-    "MSCI Inc.",
-    "41139536988"
-  ],
-  [
-    "DexCom, Inc.",
-    "41133802998"
-  ],
-  [
-    "General Mills, Inc.",
-    "40804707812"
-  ],
-  [
-    "Las Vegas Sands Corp.",
-    "40775610288"
-  ],
-  [
-    "American Electric Power Company, Inc.",
-    "40709208895"
-  ],
-  [
-    "Dominion Energy, Inc.",
-    "40524914060"
-  ],
-  [
-    "Ross Stores, Inc.",
-    "40442662027"
-  ],
-  [
-    "Johnson Controls International plc",
-    "40336176749"
-  ],
-  [
-    "Realty Income Corporation",
-    "40315835840"
-  ],
-  [
-    "IDEXX Laboratories, Inc.",
-    "40155591970"
-  ],
-  [
-    "TE Connectivity Ltd. New Switzerland Registered Shares",
-    "40089961794"
-  ],
-  [
-    "Capital One Financial Corporation",
-    "40066608402"
-  ],
-  [
-    "Exelon Corporation",
-    "39818718370"
-  ],
-  [
-    "D.R. Horton, Inc.",
-    "39685570607"
-  ],
-  [
-    "Hilton Worldwide Holdings Inc.",
-    "39436241542"
-  ],
-  [
-    "IQVIA Holdings, Inc.",
-    "39184501014"
-  ],
-  [
-    "ON Semiconductor Corporation",
-    "39152622117"
-  ],
-  [
-    "Kinder Morgan, Inc.",
-    "38836921228"
-  ],
-  [
-    "Moderna, Inc.",
-    "38675818252"
-  ],
-  [
-    "Truist Financial Corporation",
-    "38334266994"
-  ],
-  [
-    "Dow Inc.",
-    "37980089510"
-  ],
-  [
-    "Biogen Inc.",
-    "37820613606"
-  ],
-  [
-    "Simon Property Group, Inc.",
-    "37348857720"
-  ],
-  [
-    "The Travelers Companies, Inc.",
-    "37196259853"
-  ],
-  [
-    "Digital Realty Trust, Inc.",
-    "36885126470"
-  ],
-  [
-    "AmerisourceBergen Corporation",
-    "36234062305"
-  ],
-  [
-    "Sysco Corporation",
-    "36212584375"
-  ],
-  [
-    "Yum! Brands, Inc.",
-    "36180879085"
-  ],
-  [
-    "Corteva, Inc.",
-    "36027619693"
-  ],
-  [
-    "Dollar General Corporation",
-    "35750412530"
-  ],
-  [
-    "AMETEK, Inc.",
-    "35633484769"
-  ],
-  [
-    "Baker Hughes Company",
-    "35600396505"
-  ],
-  [
-    "Halliburton Company",
-    "35402723240"
-  ],
-  [
-    "Agilent Technologies, Inc.",
-    "35223566565"
-  ],
-  [
-    "W.W. Grainger, Inc.",
-    "35178118744"
-  ],
-  [
-    "Pacific Gas & Electric Co.",
-    "34965556809"
-  ],
-  [
-    "Cognizant Technology Solutions Corporation",
-    "34746850091"
-  ],
-  [
-    "DuPont de Nemours, Inc.",
-    "34613202897"
-  ],
-  [
-    "Centene Corporation",
-    "34492224212"
-  ],
-  [
-    "Otis Worldwide Corporation",
-    "34475407689"
-  ],
-  [
-    "L3Harris Technologies, Inc.",
-    "34323800660"
-  ],
-  [
-    "The Bank of New York Mellon Corporation",
-    "34282000487"
-  ],
-  [
-    "Kroger Company (The)",
-    "34143153872"
-  ],
-  [
-    "Ameriprise Financial, Inc.",
-    "34109837410"
-  ],
-  [
-    "Constellation Energy Corporation",
-    "33693159671"
-  ],
-  [
-    "Prudential Financial, Inc.",
-    "33686399336"
-  ],
-  [
-    "Verisk Analytics, Inc.",
-    "33492553797"
-  ],
-  [
-    "Rockwell Automation, Inc.",
-    "33486310147"
-  ],
-  [
-    "Lennar Corporation",
-    "33253127551"
-  ],
-  [
-    "Cummins Inc.",
-    "33091600533"
-  ],
-  [
-    "PPG Industries, Inc.",
-    "32861130701"
-  ],
-  [
-    "Fastenal Company",
-    "32845933656"
-  ],
-  [
-    "Fidelity National Information Services, Inc.",
-    "32816665687"
-  ],
-  [
-    "Brown Forman Inc",
-    "32777590369"
-  ],
-  [
-    "Global Payments Inc.",
-    "32254843664"
-  ],
-  [
-    "Xcel Energy Inc.",
-    "32093691218"
-  ],
-  [
-    "Electronic Arts Inc.",
-    "32065103661"
-  ],
-  [
-    "Devon Energy Corporation",
-    "32028594507"
-  ],
-  [
-    "CoStar Group, Inc.",
-    "31968671983"
-  ],
-  [
-    "LyondellBasell Industries NV",
-    "31573566550"
-  ],
-  [
-    "Dollar Tree, Inc.",
-    "31473233922"
-  ],
-  [
-    "Warner Bros. Discovery, Inc. – Series A",
-    "31149774743"
-  ],
-  [
-    "GE HealthCare Technologies Inc.",
-    "31092740873"
-  ],
-  [
-    "United Rentals, Inc.",
-    "30823490807"
-  ],
-  [
-    "Consolidated Edison, Inc.",
-    "30808574522"
-  ],
-  [
-    "HP Inc.",
-    "30623796049"
-  ],
-  [
-    "Newmont Corporation",
-    "30358778395"
-  ],
-  [
-    "Public Service Enterprise Group Incorporated",
-    "30355935039"
-  ],
-  [
-    "VICI Properties Inc.",
-    "30068411822"
-  ],
-  [
-    "Quanta Services, Inc.",
-    "29485556313"
-  ],
-  [
-    "ONEOK, Inc.",
-    "29367465542"
-  ],
-  [
-    "West Pharmaceutical Services, Inc.",
-    "28641162474"
-  ],
-  [
-    "Vulcan Materials Company (Holding Company)",
-    "28141054023"
-  ],
-  [
-    "Arch Capital Group Ltd.",
-    "28061078428"
-  ],
-  [
-    "Allstate Corporation (The)",
-    "27776518622"
-  ],
-  [
-    "Corning Incorporated",
-    "27423368120"
-  ],
-  [
-    "WEC Energy Group, Inc.",
-    "27124217149"
-  ],
-  [
-    "Aptiv PLC",
-    "27117191257"
-  ],
-  [
-    "American Water Works Company, Inc.",
-    "27051153636"
-  ],
-  [
-    "Ingersoll Rand Inc.",
-    "26888520479"
-  ],
-  [
-    "CDW Corporation",
-    "26849788706"
-  ],
-  [
-    "Align Technology, Inc.",
-    "26814348905"
-  ],
-  [
-    "Fortive Corporation",
-    "26782014150"
-  ],
-  [
-    "Extra Space Storage Inc",
-    "26713801747"
-  ],
-  [
-    "Delta Air Lines, Inc.",
-    "26695428470"
-  ],
-  [
-    "Martin Marietta Materials, Inc.",
-    "26648120683"
-  ],
-  [
-    "Diamondback Energy, Inc.",
-    "26472277971"
-  ],
-  [
-    "Illumina, Inc.",
-    "26470927558"
-  ],
-  [
-    "Edison International",
-    "26462257324"
-  ],
-  [
-    "Mettler-Toledo International, Inc.",
-    "25902812743"
-  ],
-  [
-    "Gartner, Inc.",
-    "25866495836"
-  ],
-  [
-    "CBRE Group Inc",
-    "25496578260"
-  ],
-  [
-    "Nasdaq, Inc.",
-    "25450176296"
-  ],
-  [
-    "AvalonBay Communities, Inc.",
-    "25423547900"
-  ],
-  [
-    "Royal Caribbean Cruises Ltd.",
-    "25412398028"
-  ],
-  [
-    "ANSYS, Inc.",
-    "25394198567"
-  ],
-  [
-    "Zimmer Biomet Holdings, Inc.",
-    "24904346934"
-  ],
-  [
-    "ResMed Inc.",
-    "24365321134"
-  ],
-  [
-    "Equity Residential",
-    "24167105804"
-  ],
-  [
-    "T. Rowe Price Group, Inc.",
-    "24136394198"
-  ],
-  [
-    "Xylem Inc.",
-    "23952806803"
-  ],
-  [
-    "SBA Communications Corporation",
-    "23946080316"
-  ],
-  [
-    "Tractor Supply Company",
-    "23863741820"
-  ],
-  [
-    "Equifax, Inc.",
-    "23581893254"
-  ],
-  [
-    "Weyerhaeuser Company",
-    "23500855113"
-  ],
-  [
-    "Take-Two Interactive Software, Inc.",
-    "23344937234"
-  ],
-  [
-    "Discover Financial Services",
-    "23330145444"
-  ],
-  [
-    "Keysight Technologies Inc.",
-    "23075436555"
-  ],
-  [
-    "Monolithic Power Systems, Inc.",
-    "23042851851"
-  ],
-  [
-    "Walgreens Boots Alliance, Inc.",
-    "22910957788"
-  ],
-  [
-    "Church & Dwight Company, Inc.",
-    "22904513082"
-  ],
-  [
-    "McCormick & Company, Incorporated",
-    "22897411947"
-  ],
-  [
-    "eBay Inc.",
-    "22877444824"
-  ],
-  [
-    "Ulta Beauty, Inc.",
-    "22556636549"
-  ],
-  [
-    "Eversource Energy (D/B/A)",
-    "22505561561"
-  ],
-  [
-    "STERIS plc (Ireland)",
-    "22114192898"
-  ],
-  [
-    "Hartford Financial Services Group, Inc. (The)",
-    "21963744975"
-  ],
-  [
-    "Hewlett Packard Enterprise Company",
-    "21955806240"
-  ],
-  [
-    "Raymond James Financial, Inc.",
-    "21949247064"
-  ],
-  [
-    "DTE Energy Company",
-    "21770081535"
-  ],
-  [
-    "Genuine Parts Company",
-    "21749626175"
-  ],
-  [
-    "State Street Corporation",
-    "21651610699"
-  ],
-  [
-    "Cardinal Health, Inc.",
-    "21521017385"
-  ],
-  [
-    "Albemarle Corporation",
-    "21520223515"
-  ],
-  [
-    "Hormel Foods Corporation",
-    "21462877957"
-  ],
-  [
-    "M&T Bank Corporation",
-    "21189871113"
-  ],
-  [
-    "Kellogg Company",
-    "21174142244"
-  ],
-  [
-    "Ameren Corporation",
-    "21169731270"
-  ],
-  [
-    "Baxter International Inc.",
-    "21162657247"
-  ],
-  [
-    "Broadridge Financial Solutions, Inc.",
-    "21142918055"
-  ],
-  [
-    "Fair Isaac Corporation",
-    "21032433973"
-  ],
-  [
-    "Coterra Energy Inc.",
-    "20975165115"
-  ],
-  [
-    "Willis Towers Watson Public Limited Company",
-    "20853466852"
-  ],
-  [
-    "VeriSign, Inc.",
-    "20764952544"
-  ],
-  [
-    "FirstEnergy Corp.",
-    "20738516151"
-  ],
-  [
-    "Invitation Homes Inc.",
-    "20512773371"
-  ],
-  [
-    "Brown & Brown, Inc.",
-    "20247139684"
-  ],
-  [
-    "Entergy Corporation",
-    "20210926603"
-  ],
-  [
-    "Howmet Aerospace Inc.",
-    "20107506873"
-  ],
-  [
-    "Alexandria Real Estate Equities, Inc.",
-    "20102417897"
-  ],
-  [
-    "Westinghouse Air Brake Technologies Corporation",
-    "19946161288"
-  ],
-  [
-    "Rollins, Inc.",
-    "19865604921"
-  ],
-  [
-    "NVR, Inc.",
-    "19843738198"
-  ],
-  [
-    "J.B. Hunt Transport Services, Inc.",
-    "19739854678"
-  ],
-  [
-    "Dover Corporation",
-    "19662063762"
-  ],
-  [
-    "Carnival Corporation",
-    "19539465362"
-  ],
-  [
-    "Garmin Ltd.",
-    "19441906966"
-  ],
-  [
-    "First Solar, Inc.",
-    "19433698483"
-  ],
-  [
-    "Live Nation Entertainment, Inc.",
-    "19422461727"
-  ],
-  [
-    "FleetCor Technologies, Inc.",
-    "19393853060"
-  ],
-  [
-    "Darden Restaurants, Inc.",
-    "19154797608"
-  ],
-  [
-    "Southwest Airlines Company",
-    "19149624084"
-  ],
-  [
-    "Clorox Company (The)",
-    "19050628146"
-  ],
-  [
-    "Tyson Foods, Inc.",
-    "19041794421"
-  ],
-  [
-    "Teledyne Technologies Incorporated",
-    "19000723618"
-  ],
-  [
-    "Laboratory Corporation of America Holdings",
-    "18998497128"
-  ],
-  [
-    "Targa Resources, Inc.",
-    "18959615960"
-  ],
-  [
-    "PPL Corporation",
-    "18648340336"
-  ],
-  [
-    "Principal Financial Group Inc",
-    "18483939432"
-  ],
-  [
-    "Regions Financial Corporation",
-    "18335895562"
-  ],
-  [
-    "Molina Healthcare Inc",
-    "18319608038"
-  ],
-  [
-    "The Cooper Companies, Inc.",
-    "18266444058"
-  ],
-  [
-    "Hologic, Inc.",
-    "17917512979"
-  ],
-  [
-    "CenterPoint Energy, Inc (Holding Co)",
-    "17793079273"
-  ],
-  [
-    "Enphase Energy, Inc.",
-    "17772560194"
-  ],
-  [
-    "Steel Dynamics, Inc.",
-    "17432416419"
-  ],
-  [
-    "Fifth Third Bancorp",
-    "17423942985"
-  ],
-  [
-    "PulteGroup, Inc.",
-    "17402024374"
-  ],
-  [
-    "Atmos Energy Corporation",
-    "17364171547"
-  ],
-  [
-    "Ball Corporation",
-    "17192747934"
-  ],
-  [
-    "Best Buy Co., Inc.",
-    "17149165469"
-  ],
-  [
-    "Expeditors International of Washington, Inc.",
-    "17130929366"
-  ],
-  [
-    "Iron Mountain Incorporated (Delaware)",
-    "17090877940"
-  ],
-  [
-    "Paycom Software, Inc.",
-    "17010591901"
-  ],
-  [
-    "Bunge Limited Bunge Limited",
-    "16951788665"
-  ],
-  [
-    "Jacobs Solutions Inc.",
-    "16816288687"
-  ],
-  [
-    "Mid-America Apartment Communities, Inc.",
-    "16760646235"
-  ],
-  [
-    "Skyworks Solutions, Inc.",
-    "16688402341"
-  ],
-  [
-    "PTC Inc.",
-    "16628330745"
-  ],
-  [
-    "CMS Energy Corporation",
-    "16608000108"
-  ],
-  [
-    "IDEX Corporation",
-    "16588516144"
-  ],
-  [
-    "FactSet Research Systems Inc.",
-    "16379991200"
-  ],
-  [
-    "Cincinnati Financial Corporation",
-    "16292648435"
-  ],
-  [
-    "International Flavors & Fragrances, Inc.",
-    "16257038604"
-  ],
-  [
-    "Huntington Bancshares Incorporated",
-    "16129408764"
-  ],
-  [
-    "United Airlines Holdings, Inc.",
-    "16103803158"
-  ],
-  [
-    "Marathon Oil Corporation",
-    "15984085071"
-  ],
-  [
-    "Waters Corporation",
-    "15957788758"
-  ],
-  [
-    "W.R. Berkley Corporation",
-    "15950992307"
-  ],
-  [
-    "Northern Trust Corporation",
-    "15885500213"
-  ],
-  [
-    "Fox Corporation",
-    "15882819682"
-  ],
-  [
-    "Expedia Group, Inc.",
-    "15880434951"
-  ],
-  [
-    "NetApp, Inc.",
-    "15876504006"
-  ],
-  [
-    "Cboe Global Markets, Inc.",
-    "15840189893"
-  ],
-  [
-    "Fox Corporation",
-    "15827508133"
-  ],
-  [
-    "Omnicom Group Inc.",
-    "15787922806"
-  ],
-  [
-    "EQT Corporation",
-    "15721259481"
-  ],
-  [
-    "Tyler Technologies, Inc.",
-    "15660322516"
-  ],
-  [
-    "Teradyne, Inc.",
-    "15564628272"
-  ],
-  [
-    "Akamai Technologies, Inc.",
-    "15307872094"
-  ],
-  [
-    "CF Industries Holdings, Inc.",
-    "15252509998"
-  ],
-  [
-    "Essex Property Trust, Inc.",
-    "15176141995"
-  ],
-  [
-    "Everest Group, Ltd.",
-    "15121807278"
-  ],
-  [
-    "Quest Diagnostics Incorporated",
-    "14983373204"
-  ],
-  [
-    "Axon Enterprise, Inc.",
-    "14959474854"
-  ],
-  [
-    "MGM Resorts International",
-    "14926825903"
-  ],
-  [
-    "Textron Inc.",
-    "14904812353"
-  ],
-  [
-    "J.M. Smucker Company (The) New",
-    "14495721164"
-  ],
-  [
-    "ConAgra Brands, Inc.",
-    "14426798781"
-  ],
-  [
-    "Incyte Corporation",
-    "14350575608"
-  ],
-  [
-    "Insulet Corporation",
-    "14320659040"
-  ],
-  [
-    "Avery Dennison Corporation",
-    "14275248552"
-  ],
-  [
-    "Snap-On Incorporated",
-    "14210738458"
-  ],
-  [
-    "Amcor plc",
-    "14081716005"
-  ],
-  [
-    "Revvity, Inc.",
-    "14054537712"
-  ],
-  [
-    "LKQ Corporation",
-    "14017277724"
-  ],
-  [
-    "Zebra Technologies Corporation",
-    "13963008080"
-  ],
-  [
-    "Loews Corporation",
-    "13889077998"
-  ],
-  [
-    "EPAM Systems, Inc.",
-    "13875229380"
-  ],
-  [
-    "Synchrony Financial",
-    "13871133172"
-  ],
-  [
-    "Lamb Weston Holdings, Inc.",
-    "13814381270"
-  ],
-  [
-    "Stanley Black & Decker, Inc.",
-    "13747798996"
-  ],
-  [
-    "Molson Coors Beverage Company",
-    "13659777672"
-  ],
-  [
-    "Pool Corporation",
-    "13648272928"
-  ],
-  [
-    "APA Corporation",
-    "13587276256"
-  ],
-  [
-    "Viatris Inc.",
-    "13506735802"
-  ],
-  [
-    "Seagate Technology Holdings PLC",
-    "13345754687"
-  ],
-  [
-    "Domino’s Pizza Inc",
-    "13295983656"
-  ],
-  [
-    "Nordson Corporation",
-    "13240734933"
-  ],
-  [
-    "Packaging Corporation of America",
-    "13215717773"
-  ],
-  [
-    "Leidos Holdings, Inc.",
-    "13199442297"
-  ],
-  [
-    "Mosaic Company (The)",
-    "13128383057"
-  ],
-  [
-    "Trimble Inc.",
-    "13106417733"
-  ],
-  [
-    "Franklin Resources, Inc.",
-    "13103157503"
-  ],
-  [
-    "Citizens Financial Group, Inc.",
-    "13087278227"
-  ],
-  [
-    "CarMax Inc",
-    "13050712231"
-  ],
-  [
-    "Gen Digital Inc.",
-    "13025375345"
-  ],
-  [
-    "Evergy, Inc.",
-    "12955201859"
-  ],
-  [
-    "Celanese Corporation",
-    "12811907064"
-  ],
-  [
-    "Alliant Energy Corporation",
-    "12792640463"
-  ],
-  [
-    "Masco Corporation",
-    "12773550021"
-  ],
-  [
-    "Campbell Soup Company",
-    "12767276566"
-  ],
-  [
-    "Western Digital Corporation",
-    "12714314114"
-  ],
-  [
-    "UDR, Inc.",
-    "12668514888"
-  ],
-  [
-    "Interpublic Group of Companies, Inc. (The)",
-    "12452637209"
-  ],
-  [
-    "Match Group, Inc.",
-    "12347052590"
-  ],
-  [
-    "Bio-Techne Corp",
-    "12317835653"
-  ],
-  [
-    "The AES Corporation",
-    "12060019390"
-  ],
-  [
-    "News Corporation",
-    "11952807061"
-  ],
-  [
-    "News Corporation",
-    "11941302916"
-  ],
-  [
-    "International Paper Company",
-    "11940429299"
-  ],
-  [
-    "Kimco Realty Corporation (HC)",
-    "11746784396"
-  ],
-  [
-    "Camden Property Trust",
-    "11353978655"
-  ],
-  [
-    "Jack Henry & Associates, Inc.",
-    "11297858295"
-  ],
-  [
-    "Host Hotels",
-    "11250473110"
-  ],
-  [
-    "Caesars Entertainment, Inc.",
-    "11216602452"
-  ],
-  [
-    "Healthpeak Properties, Inc.",
-    "11195662015"
-  ],
-  [
-    "FMC Corporation",
-    "11101283966"
-  ],
-  [
-    "Bio-Rad Laboratories, Inc.",
-    "11078910391"
-  ],
-  [
-    "C.H. Robinson Worldwide, Inc.",
-    "11059815670"
-  ],
-  [
-    "Pentair plc.",
-    "10996547428"
-  ],
-  [
-    "NiSource Inc",
-    "10926457806"
-  ],
-  [
-    "Ceridian HCM Holding Inc.",
-    "10871092807"
-  ],
-  [
-    "Wynn Resorts, Limited",
-    "10696343017"
-  ],
-  [
-    "Globe Life Inc.",
-    "10661524446"
-  ],
-  [
-    "Regency Centers Corporation",
-    "10502247044"
-  ],
-  [
-    "A.O. Smith Corporation",
-    "10371810403"
-  ],
-  [
-    "Teleflex Incorporated",
-    "10225964365"
-  ],
-  [
-    "Charles River Laboratories International, Inc.",
-    "10197872196"
-  ],
-  [
-    "KeyCorp",
-    "10136001927"
-  ],
-  [
-    "Henry Schein, Inc.",
-    "9992333348"
-  ],
-  [
-    "Eastman Chemical Company",
-    "9914815964"
-  ],
-  [
-    "Boston Properties, Inc.",
-    "9891878595"
-  ],
-  [
-    "American Airlines Group, Inc.",
-    "9826571023"
-  ],
-  [
-    "Paramount Global",
-    "9777476050"
-  ],
-  [
-    "Qorvo, Inc.",
-    "9689217753"
-  ],
-  [
-    "Allegion plc",
-    "9447763156"
-  ],
-  [
-    "MarketAxess Holdings, Inc.",
-    "9351536705"
-  ],
-  [
-    "BorgWarner Inc.",
-    "9317898137"
-  ],
-  [
-    "DaVita Inc.",
-    "9272428253"
-  ],
-  [
-    "F5, Inc.",
-    "9211473469"
-  ],
-  [
-    "SolarEdge Technologies, Inc.",
-    "9181596018"
-  ],
-  [
-    "Etsy, Inc.",
-    "9075957865"
-  ],
-  [
-    "Juniper Networks, Inc.",
-    "9062356138"
-  ],
-  [
-    "Pinnacle West Capital Corporation",
-    "8866680052"
-  ],
-  [
-    "Hasbro, Inc.",
-    "8846118248"
-  ],
-  [
-    "Huntington Ingalls Industries, Inc.",
-    "8748547609"
-  ],
-  [
-    "Bath & Body Works, Inc.",
-    "8359850871"
-  ],
-  [
-    "NRG Energy, Inc.",
-    "8351330487"
-  ],
-  [
-    "Westrock Company",
-    "8229130931"
-  ],
-  [
-    "Catalent, Inc.",
-    "7996854015"
-  ],
-  [
-    "Robert Half Inc.",
-    "7993692328"
-  ],
-  [
-    "Universal Health Services, Inc.",
-    "7988758160"
-  ],
-  [
-    "DENTSPLY SIRONA Inc.",
-    "7897006636"
-  ],
-  [
-    "Federal Realty Investment Trust",
-    "7891495663"
-  ],
-  [
-    "V.F. Corporation",
-    "7781256556"
-  ],
-  [
-    "Ralph Lauren Corporation",
-    "7536188250"
-  ],
-  [
-    "Assurant, Inc.",
-    "7460822436"
-  ],
-  [
-    "Whirlpool Corporation",
-    "7408622278"
-  ],
-  [
-    "Norwegian Cruise Line Holdings Ltd.",
-    "7096065671"
-  ],
-  [
-    "Generac Holdings Inc.",
-    "7055196136"
-  ],
-  [
-    "Invesco Ltd",
-    "6836977250"
-  ],
-  [
-    "Comerica Incorporated",
-    "6229076130"
-  ],
-  [
-    "Mohawk Industries, Inc.",
-    "6216015268"
-  ],
-  [
-    "Organon & Co.",
-    "5747731853"
-  ],
-  [
-    "Alaska Air Group, Inc.",
-    "5441388923"
-  ],
-  [
-    "Zions Bancorporation N.A.",
-    "5145080633"
-  ],
-  [
-    "Sealed Air Corporation",
-    "4976373834"
-  ],
-  [
-    "Lincoln National Corporation",
-    "4368181590"
-  ],
-  [
-    "Newell Brands Inc.",
-    "4365668193"
-  ],
-  [
-    "DXC Technology Company",
-    "4154780819"
-  ],
-  [
-    "Advance Auto Parts Inc.",
-    "4150964094"
-  ],
-  [
-    "Tapestry, Inc.",
-    "4017225400"
-  ]
+    [
+        "apple inc",
+        2974000000000
+    ],
+    [
+        "microsoft corp.",
+        2803000000000
+    ],
+    [
+        "alphabet inc (google) class c",
+        1714000000000
+    ],
+    [
+        "amazon.com, inc.",
+        1509000000000
+    ],
+    [
+        "nvidia corporation",
+        1230000000000
+    ],
+    [
+        "meta platforms, inc.",
+        867894000000
+    ],
+    [
+        "berkshire hathaway inc.",
+        787942000000
+    ],
+    [
+        "tesla, inc.",
+        741150000000
+    ],
+    [
+        "eli lilly and company",
+        567026000000
+    ],
+    [
+        "visa inc.",
+        504576000000
+    ],
+    [
+        "unitedhealth group incorporated",
+        493739000000
+    ],
+    [
+        "jp morgan chase & co.",
+        441775000000
+    ],
+    [
+        "exxon mobil corporation",
+        419475000000
+    ],
+    [
+        "walmart inc.",
+        417811000000
+    ],
+    [
+        "broadcom inc.",
+        407466000000
+    ],
+    [
+        "mastercard incorporated",
+        376245000000
+    ],
+    [
+        "johnson & johnson",
+        359190000000
+    ],
+    [
+        "procter & gamble company (the)",
+        353285000000
+    ],
+    [
+        "oracle corporation",
+        317891000000
+    ],
+    [
+        "home depot, inc. (the)",
+        307520000000
+    ],
+    [
+        "adobe inc.",
+        277585000000
+    ],
+    [
+        "chevron corporation",
+        272756000000
+    ],
+    [
+        "merck & company, inc.",
+        258040000000
+    ],
+    [
+        "costco wholesale corporation",
+        256670000000
+    ],
+    [
+        "coca-cola company (the)",
+        247213000000
+    ],
+    [
+        "abbvie inc.",
+        243891000000
+    ],
+    [
+        "bank of america corporation",
+        236423000000
+    ],
+    [
+        "pepsico, inc.",
+        228138000000
+    ],
+    [
+        "salesforce, inc.",
+        217757000000
+    ],
+    [
+        "netflix, inc.",
+        207742000000
+    ],
+    [
+        "accenture plc",
+        205992000000
+    ],
+    [
+        "mcdonald's corporation",
+        201337000000
+    ],
+    [
+        "linde plc",
+        197869000000
+    ],
+    [
+        "advanced micro devices inc",
+        195411000000
+    ],
+    [
+        "cisco systems, inc.",
+        193859000000
+    ],
+    [
+        "alibaba group holdings ltd. dr",
+        191135000000
+    ],
+    [
+        "intel corporation",
+        187359000000
+    ],
+    [
+        "thermo fisher scientific inc",
+        180575000000
+    ],
+    [
+        "walt disney company (the)",
+        174250000000
+    ],
+    [
+        "abbott laboratories",
+        174023000000
+    ],
+    [
+        "comcast corporation",
+        171448000000
+    ],
+    [
+        "t-mobile us, inc.",
+        171100000000
+    ],
+    [
+        "pfizer, inc.",
+        168263000000
+    ],
+    [
+        "nike, inc.",
+        160276000000
+    ],
+    [
+        "intuit inc.",
+        157692000000
+    ],
+    [
+        "wells fargo & company",
+        154962000000
+    ],
+    [
+        "danaher corporation",
+        154340000000
+    ],
+    [
+        "verizon communications inc.",
+        153937000000
+    ],
+    [
+        "pdd holdings inc. dr",
+        152987000000
+    ],
+    [
+        "qualcomm incorporated",
+        143788000000
+    ],
+    [
+        "philip morris international inc",
+        142604000000
+    ],
+    [
+        "amgen inc.",
+        142149000000
+    ],
+    [
+        "texas instruments incorporated",
+        140808000000
+    ],
+    [
+        "international business machines corporation",
+        140397000000
+    ],
+    [
+        "conocophillips",
+        137205000000
+    ],
+    [
+        "servicenow, inc.",
+        136122000000
+    ],
+    [
+        "union pacific corporation",
+        134029000000
+    ],
+    [
+        "boeing company (the)",
+        131534000000
+    ],
+    [
+        "morgan stanley",
+        130862000000
+    ],
+    [
+        "general electric company",
+        130682000000
+    ],
+    [
+        "s&p global inc.",
+        129917000000
+    ],
+    [
+        "blackstone inc.",
+        127521000000
+    ],
+    [
+        "caterpillar, inc.",
+        127129000000
+    ],
+    [
+        "united parcel service, inc.",
+        126524000000
+    ],
+    [
+        "honeywell international inc.",
+        125871000000
+    ],
+    [
+        "applied materials, inc.",
+        125271000000
+    ],
+    [
+        "starbucks corporation",
+        119156000000
+    ],
+    [
+        "american express company",
+        119048000000
+    ],
+    [
+        "lowe's companies, inc.",
+        117706000000
+    ],
+    [
+        "nextera energy, inc.",
+        117388000000
+    ],
+    [
+        "at&t inc.",
+        114829000000
+    ],
+    [
+        "rtx corporation",
+        113975000000
+    ],
+    [
+        "uber technologies, inc.",
+        113131000000
+    ],
+    [
+        "goldman sachs group, inc. (the)",
+        110772000000
+    ],
+    [
+        "lockheed martin corporation",
+        110075000000
+    ],
+    [
+        "deere & company",
+        109699000000
+    ],
+    [
+        "booking holdings inc. common stock",
+        109589000000
+    ],
+    [
+        "stryker corporation",
+        109250000000
+    ],
+    [
+        "intuitive surgical, inc.",
+        109188000000
+    ],
+    [
+        "elevance health, inc.",
+        108640000000
+    ],
+    [
+        "blackrock, inc.",
+        106990000000
+    ],
+    [
+        "charles schwab corporation (the)",
+        102857000000
+    ],
+    [
+        "tjx companies, inc. (the)",
+        101457000000
+    ],
+    [
+        "medtronic plc.",
+        100043000000
+    ],
+    [
+        "bristol-myers squibb company",
+        99703000000
+    ],
+    [
+        "marsh & mclennan companies, inc.",
+        97781000000
+    ],
+    [
+        "mondelez international, inc.",
+        95848000000
+    ],
+    [
+        "automatic data processing, inc.",
+        94919000000
+    ],
+    [
+        "gilead sciences, inc.",
+        93833000000
+    ],
+    [
+        "lam research corporation",
+        93728000000
+    ],
+    [
+        "progressive corporation (the)",
+        93191000000
+    ],
+    [
+        "vertex pharmaceuticals incorporated",
+        91166000000
+    ],
+    [
+        "analog devices, inc.",
+        90982000000
+    ],
+    [
+        "chubb limited",
+        90904000000
+    ],
+    [
+        "eaton corporation, plc",
+        90220000000
+    ],
+    [
+        "shopify inc.",
+        89618000000
+    ],
+    [
+        "cvs health corporation",
+        87760000000
+    ],
+    [
+        "regeneron pharmaceuticals, inc.",
+        87308000000
+    ],
+    [
+        "citigroup, inc.",
+        86919000000
+    ],
+    [
+        "micron technology, inc.",
+        86042000000
+    ],
+    [
+        "airbnb, inc.",
+        84269000000
+    ],
+    [
+        "the cigna group",
+        83221000000
+    ],
+    [
+        "synopsys, inc.",
+        81715000000
+    ],
+    [
+        "zoetis inc.",
+        80432000000
+    ],
+    [
+        "palo alto networks, inc.",
+        80416000000
+    ],
+    [
+        "boston scientific corporation",
+        79490000000
+    ],
+    [
+        "cme group inc.",
+        76250000000
+    ],
+    [
+        "schlumberger n.v.",
+        75358000000
+    ],
+    [
+        "southern company (the)",
+        75324000000
+    ],
+    [
+        "kla corporation",
+        74922000000
+    ],
+    [
+        "mercadolibre, inc.",
+        74238000000
+    ],
+    [
+        "fiserv, inc.",
+        74036000000
+    ],
+    [
+        "eog resources, inc.",
+        72760000000
+    ],
+    [
+        "cadence design systems, inc.",
+        72717000000
+    ],
+    [
+        "altria group, inc.",
+        72069000000
+    ],
+    [
+        "netease, inc. dr",
+        71917000000
+    ],
+    [
+        "illinois tool works inc.",
+        71870000000
+    ],
+    [
+        "northrop grumman corporation",
+        70152000000
+    ],
+    [
+        "sherwin-williams company (the)",
+        69542000000
+    ],
+    [
+        "waste management, inc.",
+        68913000000
+    ],
+    [
+        "duke energy corporation (holding company)",
+        68825000000
+    ],
+    [
+        "becton, dickinson and company",
+        67456000000
+    ],
+    [
+        "general dynamics corporation",
+        67069000000
+    ],
+    [
+        "arista networks, inc.",
+        66840000000
+    ],
+    [
+        "hca healthcare, inc.",
+        66623000000
+    ],
+    [
+        "aon plc",
+        65943000000
+    ],
+    [
+        "moody's corporation",
+        65876000000
+    ],
+    [
+        "vmware, inc.",
+        64293000000
+    ],
+    [
+        "fedex corporation",
+        64081000000
+    ],
+    [
+        "intercontinental exchange inc.",
+        64059000000
+    ],
+    [
+        "csx corporation",
+        63039000000
+    ],
+    [
+        "colgate-palmolive company",
+        62053000000
+    ],
+    [
+        "workday, inc.",
+        61848000000
+    ],
+    [
+        "paypal holdings, inc.",
+        61368000000
+    ],
+    [
+        "humana inc.",
+        61248000000
+    ],
+    [
+        "air products and chemicals, inc.",
+        60663000000
+    ],
+    [
+        "marriott international",
+        60524000000
+    ],
+    [
+        "mckesson corporation",
+        60295000000
+    ],
+    [
+        "charter communications, inc.",
+        59983000000
+    ],
+    [
+        "kkr & co. inc.",
+        59897000000
+    ],
+    [
+        "chipotle mexican grill, inc.",
+        59685000000
+    ],
+    [
+        "target corporation",
+        59358000000
+    ],
+    [
+        "u.s. bancorp",
+        58365000000
+    ],
+    [
+        "southern copper corporation",
+        58037000000
+    ],
+    [
+        "o'reilly automotive, inc.",
+        57620000000
+    ],
+    [
+        "monster beverage corporation",
+        57188000000
+    ],
+    [
+        "enterprise products partners l.p.",
+        57117000000
+    ],
+    [
+        "marathon petroleum corporation",
+        56582000000
+    ],
+    [
+        "arm holdings plc dr",
+        56378000000
+    ],
+    [
+        "lululemon athletica inc.",
+        55954000000
+    ],
+    [
+        "roper technologies, inc.",
+        55904000000
+    ],
+    [
+        "cintas corporation",
+        55880000000
+    ],
+    [
+        "pioneer natural resources company",
+        55472000000
+    ],
+    [
+        "parker-hannifin corporation",
+        55325000000
+    ],
+    [
+        "snowflake inc.",
+        55073000000
+    ],
+    [
+        "occidental petroleum corporation",
+        54094000000
+    ],
+    [
+        "amphenol corporation",
+        53375000000
+    ],
+    [
+        "transdigm group inc.",
+        53289000000
+    ],
+    [
+        "arthur j. gallagher & co.",
+        53205000000
+    ],
+    [
+        "brookfield corporation",
+        53179000000
+    ],
+    [
+        "dell technologies inc.",
+        53033000000
+    ],
+    [
+        "motorola solutions, inc.",
+        52851000000
+    ],
+    [
+        "freeport-mcmoran, inc.",
+        52585000000
+    ],
+    [
+        "3m company",
+        52362000000
+    ],
+    [
+        "ecolab inc.",
+        52307000000
+    ],
+    [
+        "nxp semiconductors n.v.",
+        52040000000
+    ],
+    [
+        "phillips 66",
+        51726000000
+    ],
+    [
+        "trane technologies plc",
+        51692000000
+    ],
+    [
+        "pnc financial services group, inc. (the)",
+        51486000000
+    ],
+    [
+        "emerson electric company",
+        50665000000
+    ],
+    [
+        "republic services, inc.",
+        50027000000
+    ],
+    [
+        "apollo global management, inc. (new)",
+        49792000000
+    ],
+    [
+        "crowdstrike holdings, inc.",
+        49602000000
+    ],
+    [
+        "copart, inc.",
+        48456000000
+    ],
+    [
+        "marvell technology, inc.",
+        48161000000
+    ],
+    [
+        "paccar inc.",
+        47950000000
+    ],
+    [
+        "atlassian corporation",
+        47879000000
+    ],
+    [
+        "norfolk southern corporation",
+        47523000000
+    ],
+    [
+        "aflac incorporated",
+        47420000000
+    ],
+    [
+        "crh plc",
+        46591000000
+    ],
+    [
+        "autozone, inc.",
+        46562000000
+    ],
+    [
+        "autodesk, inc.",
+        46459000000
+    ],
+    [
+        "palantir technologies inc.",
+        46414000000
+    ],
+    [
+        "metlife, inc.",
+        46351000000
+    ],
+    [
+        "microchip technology incorporated",
+        45551000000
+    ],
+    [
+        "energy transfer lp",
+        45412000000
+    ],
+    [
+        "dba sempra",
+        45331000000
+    ],
+    [
+        "american international group, inc. new",
+        45211000000
+    ],
+    [
+        "carrier global corporation",
+        45132000000
+    ],
+    [
+        "hess corporation",
+        44578000000
+    ],
+    [
+        "keurig dr pepper inc.",
+        44411000000
+    ],
+    [
+        "ross stores, inc.",
+        43616000000
+    ],
+    [
+        "old dominion freight line, inc.",
+        43525000000
+    ],
+    [
+        "estee lauder companies, inc. (the)",
+        43364000000
+    ],
+    [
+        "constellation brands, inc.",
+        43307000000
+    ],
+    [
+        "williams companies, inc. (the)",
+        43259000000
+    ],
+    [
+        "hilton worldwide holdings inc.",
+        43161000000
+    ],
+    [
+        "d.r. horton, inc.",
+        43043000000
+    ],
+    [
+        "paychex, inc.",
+        42658000000
+    ],
+    [
+        "truist financial corporation",
+        42464000000
+    ],
+    [
+        "valero energy corporation",
+        42349000000
+    ],
+    [
+        "newmont corporation",
+        42129000000
+    ],
+    [
+        "dexcom, inc.",
+        41728000000
+    ],
+    [
+        "cheniere energy, inc.",
+        41671000000
+    ],
+    [
+        "ford mtr co del",
+        41371000000
+    ],
+    [
+        "msci inc.",
+        41268000000
+    ],
+    [
+        "the kraft heinz company",
+        41267000000
+    ],
+    [
+        "te connectivity ltd. new switzerland registered shares",
+        40728000000
+    ],
+    [
+        "kimberly-clark corporation",
+        40725000000
+    ],
+    [
+        "capital one financial corporation",
+        40648000000
+    ],
+    [
+        "edwards lifesciences corporation",
+        40545000000
+    ],
+    [
+        "american electric power company, inc.",
+        40435000000
+    ],
+    [
+        "seagen inc.",
+        39986000000
+    ],
+    [
+        "w.w. grainger, inc.",
+        39879000000
+    ],
+    [
+        "fortinet, inc.",
+        39455000000
+    ],
+    [
+        "archer-daniels-midland company",
+        39428000000
+    ],
+    [
+        "the hershey company",
+        39359000000
+    ],
+    [
+        "cencora, inc.",
+        39331000000
+    ],
+    [
+        "the travelers companies, inc.",
+        39157000000
+    ],
+    [
+        "general motors company",
+        39058000000
+    ],
+    [
+        "idexx laboratories, inc.",
+        39046000000
+    ],
+    [
+        "constellation energy corporation",
+        38977000000
+    ]
 ]

@@ -33,6 +33,8 @@ with open('Webscraping/seleniumdata.csv', 'w', newline='', encoding='utf8') as f
             name = name_element.text.strip()
             if name.startswith('"') and name.endswith('"'):
                 name = name[1:-1]
+
+            name = name.lower()
             print(name)
         
             cap = row.find_element(By.XPATH, './td[8]').text.strip()

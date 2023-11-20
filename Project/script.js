@@ -40,6 +40,15 @@ function formatNumber(x) {
     }
 }
 
+function formatTitle(x) {
+    companyWords = x.split(" ")
+    companyOutput = ""
+    for (let i = 0; i < companyWords.length; i++) {
+        companyOutput += companyWords[i].charAt(0).toUpperCase() + companyWords[i].substring(1, companyWords[i].length) + " "
+    }
+    return companyOutput.trim()
+}
+
 function startup() {
 
     modalStart.classList.add("hidden")
@@ -50,17 +59,17 @@ function startup() {
     randomIndex = getRandomIndex()
 
     companyTitle = data[randomIndex][0]
+    finalCompanyTitle = formatTitle(companyTitle)
+
     input = data[randomIndex][1]
     input = input - (input % 100000000)
 
     inputstring = formatNumber(input)
 
-
-
     guess = parseInt(randomGenerate(input));
     guessstring = formatNumber(guess - (guess % 100000000))
     capText.textContent = guessstring;
-    companyText.textContent = companyTitle
+    companyText.textContent = finalCompanyTitle
 
     //Displays guess and user input in console for testing purposes
     console.log(`Guess: ${guessstring}, Answer: ${inputstring}`)
@@ -149,6 +158,8 @@ function nextQuestion() {
     randomIndex = getRandomIndex()
 
     companyTitle = data[randomIndex][0]
+    finalCompanyTitle = formatTitle(companyTitle)
+
     input = data[randomIndex][1]
     input = input - (input % 100000000)
 
@@ -160,7 +171,7 @@ function nextQuestion() {
     guessstring = formatNumber(guess - (guess % 100000000))
 
     capText.textContent = guessstring;
-    companyText.textContent = companyTitle
+    companyText.textContent = finalCompanyTitle
 
     console.log(`Guess: ${guessstring}, Answer: ${inputstring}`)
 
@@ -175,17 +186,17 @@ function restartGame() {
     randomIndex = getRandomIndex()
 
     companyTitle = data[randomIndex][0]
+    finalCompanyTitle = formatTitle(companyTitle)
+
     input = data[randomIndex][1]
     input = input - (input % 100000000)
 
     inputstring = formatNumber(input)
 
-
-
     guess = parseInt(randomGenerate(input));
     guessstring = formatNumber(guess - (guess % 100000000))
     capText.textContent = guessstring;
-    companyText.textContent = companyTitle
+    companyText.textContent = finalCompanyTitle
 
     if (currentScore > highScore) {
         highScore = currentScore;
