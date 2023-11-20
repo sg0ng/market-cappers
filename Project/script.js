@@ -58,7 +58,7 @@ function startup() {
 
 
     guess = parseInt(randomGenerate(input));
-    guessstring = formatNumber(guess)
+    guessstring = formatNumber(guess - (guess % 100000000))
     capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
@@ -76,7 +76,7 @@ function getRandomIndex() {
 //Generates a random guess based on the answer
 //Returns the random guess
 function randomGenerateTest() {
-    for(let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
         console.log(randomGenerate(100));
     }
 }
@@ -157,7 +157,7 @@ function nextQuestion() {
 
 
     guess = parseInt(randomGenerate(input));
-    guessstring = formatNumber(guess)
+    guessstring = formatNumber(guess - (guess % 100000000))
 
     capText.textContent = guessstring;
     companyText.textContent = companyTitle
@@ -183,7 +183,7 @@ function restartGame() {
 
 
     guess = parseInt(randomGenerate(input));
-    guessstring = formatNumber(guess)
+    guessstring = formatNumber(guess - (guess % 100000000))
     capText.textContent = guessstring;
     companyText.textContent = companyTitle
 
