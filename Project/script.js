@@ -124,11 +124,11 @@ function compareSmaller() {
     if (guess >= input) {
         currentScore = currentScore + 1;
         document.getElementById('currentScore').textContent = currentScore;
-        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
+        document.getElementById('ansForCorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
+        document.getElementById('ansForIncorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
@@ -139,12 +139,12 @@ function compareLarger() {
     console.log(guess + " " + input)
     if (guess <= input) {
         currentScore = currentScore + 1;
-        document.getElementById('ansForCorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
+        document.getElementById('ansForCorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
         document.getElementById('currentScore').textContent = currentScore;
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of " + companyTitle + " is " + inputstring;
+        document.getElementById('ansForIncorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
