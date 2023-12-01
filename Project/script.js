@@ -6,6 +6,7 @@ let guess;
 let input = 1000;
 let randomIndex;
 let companyTitle;
+let guessString = ""
 
 //selects the correct and incorrect modals
 let modalCorrect = document.querySelector(".modal__correct")
@@ -32,7 +33,10 @@ function numberWithCommas(x) {
 }
 
 function formatNumber(x) {
-    if (x >= 1000000000) {
+    if (x >= 1000000000000) {
+        return "$" + (x / 1000000000000) + " trillion"
+    }
+    else if (x >= 1000000000) {
         return "$" + (x / 1000000000) + " billion"
     }
     else if (x >= 1000000) {
@@ -68,7 +72,7 @@ function startup() {
 
     guess = parseInt(randomGenerate(input));
     guessstring = formatNumber(guess - (guess % 100000000))
-    capText.textContent = guessstring;
+    capText.textContent = "Higher or Lower than " + guessstring;
     companyText.textContent = finalCompanyTitle
 
     //Displays guess and user input in console for testing purposes
@@ -124,11 +128,18 @@ function compareSmaller() {
     if (guess >= input) {
         currentScore = currentScore + 1;
         document.getElementById('currentScore').textContent = currentScore;
-        document.getElementById('ansForCorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
+
+        document.getElementById('ansForCorrect').innerHTML = ''
+        html = `The capital value of <u>${finalCompanyTitle}</u> is <b>${inputstring}</b> which is higher than <b>${guessstring}</b>`
+        document.getElementById('ansForCorrect').insertAdjacentHTML("afterbegin", html)
+
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
+        document.getElementById('ansForIncorrect').innerHTML = ''
+        html = `The capital value of <u>${finalCompanyTitle}</u> is <b>${inputstring}</b> which is lower than <b>${guessstring}</b>`
+        document.getElementById('ansForIncorrect').insertAdjacentHTML("afterbegin", html)
+
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
@@ -139,12 +150,19 @@ function compareLarger() {
     console.log(guess + " " + input)
     if (guess <= input) {
         currentScore = currentScore + 1;
-        document.getElementById('ansForCorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
         document.getElementById('currentScore').textContent = currentScore;
+
+        document.getElementById('ansForCorrect').innerHTML = ''
+        html = `The capital value of <u>${finalCompanyTitle}</u> is <b>${inputstring}</b> which is higher than <b>${guessstring}</b>`
+        document.getElementById('ansForCorrect').insertAdjacentHTML("afterbegin", html)
+
         modalCorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "green"
     } else {
-        document.getElementById('ansForIncorrect').textContent = "The capital value of " + finalCompanyTitle + " is " + inputstring;
+        document.getElementById('ansForIncorrect').innerHTML = ''
+        html = `The capital value of <u>${finalCompanyTitle}</u> is <b>${inputstring}</b> which is lower than <b>${guessstring}</b>`
+        document.getElementById('ansForIncorrect').insertAdjacentHTML("afterbegin", html)
+
         modalIncorrect.classList.remove("hidden")
         document.body.style.backgroundColor = "red"
     }
@@ -170,7 +188,7 @@ function nextQuestion() {
     guess = parseInt(randomGenerate(input));
     guessstring = formatNumber(guess - (guess % 100000000))
 
-    capText.textContent = guessstring;
+    capText.textContent = "Higher or Lower than " + guessstring;
     companyText.textContent = finalCompanyTitle
 
     console.log(`Guess: ${guessstring}, Answer: ${inputstring}`)
@@ -195,7 +213,7 @@ function restartGame() {
 
     guess = parseInt(randomGenerate(input));
     guessstring = formatNumber(guess - (guess % 100000000))
-    capText.textContent = guessstring;
+    capText.textContent = "Higher or Lower than " + guessstring;
     companyText.textContent = finalCompanyTitle
 
     if (currentScore > highScore) {

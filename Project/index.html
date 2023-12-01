@@ -17,15 +17,12 @@
         <section id="game">
             <div id="question">
                 <h3 class="company__text">Test</h3> <!-- Question text goes here -->
-                <p class="cap__text" id="rand"></p>
+                <p class="cap__text" id="rand">Higher or Lower than: test</p>
             </div>
 
             <div id="options">
                 <input type="button" onclick="compareSmaller()" value="lower" id="lower" class="button">
                 <input type="button" onclick="compareLarger()" value="higher" id="higher" class="button">
-            </div>
-            <div id="marketCap">
-                <p>Test Market Cap</p> <!-- Display the market cap here -->
             </div>
         </section>
 
@@ -37,8 +34,7 @@
         <div class="modal__correct hidden">
             <div class="modal__content">
                 <h2>Correct Answer!</h2>
-                <h3 id = "ansForCorrect"></h3>
-                <p>Click to view the next question</p>
+                <h3 id="ansForCorrect"></h3>
                 <br></br>
             </div>
             <div class="modal__input">
@@ -49,8 +45,7 @@
         <div class="modal__incorrect hidden">
             <div class="modal__content">
                 <h2>Incorrect Answer!</h2>
-                <h3 id = "ansForIncorrect"></h3>
-                <p>Click to play again</p>
+                <h3 id="ansForIncorrect"><b class="inputNum"></b><b class="guessNum"></b></h3>
                 <br></br>
             </div>
             <div class="modal__input">
