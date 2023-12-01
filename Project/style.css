@@ -5,6 +5,7 @@ body, h1, h2, p {
     background-position-x: 0px;
     background-position-y: 50px;
     background-size: cover;
+
 }
 
 h1, h2, p {
@@ -17,16 +18,17 @@ body {
 }
 
 header {
-    background-color: #607c8e;
+    background-color: #2d3c45;
     color: #fff;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     height: 40px;
 }
 
 header h1 {
-    font-size: 32px;
-    background-color: #607c8e;
+    font-family: 'Abril Fatface';
+    font-size: 45px;
+    background-color: #2d3c45;
 }
 
 main {
@@ -43,6 +45,7 @@ main {
 }
 
 #question {
+    font-family: 'Antonio';
     font-size: 20px;
     margin: 20px 0;
 }
@@ -61,6 +64,7 @@ main {
     background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
     border-radius: 20px;
     color: white !important;
+    font-family: 'Big Shoulders Inline Text';
     font-size: 20px;
     font-weight: bold;
     position: relative;
@@ -68,6 +72,7 @@ main {
     height: 190px;
     width: 190px;
     margin: 20px;
+    
 }
    
 /* .button:hover {
@@ -122,6 +127,7 @@ main {
     text-align: center;
     display: none;
     margin-top: 20px;
+    
 }
 
 footer {
@@ -143,14 +149,17 @@ button#playAgain {
     width: 840px;
     height: 455px;
     background: rgb(255, 255, 255);
-    top: 150px;
+    top: 120px;
     left: calc(50% - 420px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 30px;
+    border-color: #8dadd646;
+    
 }
+
 
 .modal__content {
     text-align: center;
@@ -160,11 +169,94 @@ button#playAgain {
     display: none;
 }
 
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 28px;
+    width: 200 px;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .next {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    border-color: #04AA6D;
+    border-radius: 12px;
+    color: green;
+  }
+  .next:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .next:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+/* BUTTONS */
+  /* Blue */
+  .restart {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    border-color: #2196F3;
+    border-radius: 12px;
+    color: dodgerblue
+  }
+  .restart:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .restart:hover {
+    background: #2196F3;
+    color: white;
+  }
+  
+  /* Orange */
+  .start {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    border-color: #ff9800;
+    border-radius: 12px;
+    color: orange;
+  }
 
+  .start:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .start:hover {
+    background: #ff9800;
+    color: white;
+  }
 
 @media (max-width: 600px) {
     main {
         padding: 10px;
+        
     }
 
     button {
