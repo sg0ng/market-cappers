@@ -54,7 +54,6 @@ body {
 
 header {
     background-color: #1b1423;
-    background-image: url(/Project/MarketCappers.jpg);
     background-position: center;
     color: #fff;
     padding: 30px;
@@ -78,6 +77,16 @@ main {
 
 #game {
     text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
 }
 
 #question {
